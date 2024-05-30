@@ -89,9 +89,7 @@ $$\sigma_X^2 = \frac{\sum_{I = 1}^N \left( X_I - \mu_X \right)^2}{N}$$
 The ***population standard deviation*** ***of a QVAR*** $X$ is represented by the symbol $\sigma_X$, and defined as
 
 $$\sigma_X = \sqrt{\sigma_X^2}$$
-
 :::
-
 
 ## QUANTITATIVE VARIABLES IN SAMPLES
 
@@ -101,7 +99,7 @@ For some concepts, the definitions for samples are identical to the definitions 
 
 For other concepts, the differences are not only in the notation—the definitions for samples are similar, but not identical, to the definitions for populations.
 
-::: {.callout-warning}
+::: callout-warning
 ### Notation
 
 A ***sample*** consists of $n$ observations, labelled $i = 1,...,n$.
@@ -110,16 +108,16 @@ $X$ is the name of a quantitative variable.
 
 For $i = 1,...,n$, $x_i$ is the value of $X$ for observation $i$.
 :::
-::: {.callout-note}
+
+::: callout-note
 ### Definition: The sample mean of a QVAR
 
 The ***sample mean of a QVAR*** $X$ is represented by the symbol $\bar{x}$, and defined as
 
 $$\bar{x} = \frac{\sum_{i = 1}^n x_i}{n}$$
-
 :::
 
-::: {.callout-note}
+::: callout-note
 ### Definition: A deviation from the sample mean of a QVAR for a given observation
 
 A ***deviation from the sample mean of a QVAR*** $X$ ***for a given observation*** is the difference between the value of $X$ for the given observation and the population mean of $X$. The deviation from the sample mean of $Q$ for observation $i$ is represented by the symbol $d_{X_i}$:
@@ -127,7 +125,7 @@ A ***deviation from the sample mean of a QVAR*** $X$ ***for a given observation*
 $$d_{X_i} = x_i - \bar{x}$$
 :::
 
-::: {.callout-tip}
+::: callout-tip
 ### Fact
 
 For every sample and any QVAR $X$, if you find the deviation from the sample mean of $X$ for every observation in the sample, and then add up all those deviations, you will find that the sum is zero.
@@ -154,10 +152,9 @@ $$\begin{array}{l}
 \,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = n \bar{x} - n \bar{x} \\
 \,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = 0
 \end{array}$$
-
 :::
 
-::: {.callout-note}
+::: callout-note
 ### Definition: The sample mean absolute deviation of a QVAR
 
 The ***sample mean absolute deviation*** ***of a QVAR*** $X$ is represented by the symbol $mad_X$, and defined as
@@ -165,7 +162,7 @@ The ***sample mean absolute deviation*** ***of a QVAR*** $X$ is represented by t
 $$mad_X = \frac{\sum_{i = 1}^n \left| x_i - \bar{x} \right|}{n - 1}$$
 :::
 
-:::{.callout-note}
+::: callout-note
 ### Definition: The sample variance of a QVAR
 
 The ***sample variance*** ***of a QVAR*** $X$ is represented by the symbol $s_X^2$, and defined as
@@ -173,7 +170,7 @@ The ***sample variance*** ***of a QVAR*** $X$ is represented by the symbol $s_X^
 $$s_X^2 = \frac{\sum_{i = 1}^n \left( x_i - \bar{x} \right)^2}{n - 1}$$
 :::
 
-:::{.callout-note}
+::: callout-note
 ### Definition: The sample standard deviation of a QVAR
 
 The ***sample standard deviation*** ***of a QVAR*** $X$ is represented by the symbol $s_X$, and defined as

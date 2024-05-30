@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - Quantitative Variables in Finite Populations and Samples.qmd
 
 format:
   html:
