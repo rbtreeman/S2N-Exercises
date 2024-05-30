@@ -67,7 +67,7 @@ $$\begin{array}{l}
 \end{array}$$
 :::
 
-::: callout-note
+::: {.callout-note}
 ### Definition
 
 The ***population mean absolute deviation*** ***of a QVAR*** $X$ is represented by the symbol $MAD_X$, and defined as
@@ -75,7 +75,7 @@ The ***population mean absolute deviation*** ***of a QVAR*** $X$ is represented 
 $$MAD_X = \frac{\sum_{I = 1}^N \left| X_I - \mu_X \right|}{N}$$
 :::
 
-::: callout-note
+::: {.callout-note}
 ### Definition
 
 The ***population variance*** ***of a QVAR*** $X$ is represented by the symbol $\sigma_X^2$, and defined as
@@ -83,13 +83,14 @@ The ***population variance*** ***of a QVAR*** $X$ is represented by the symbol $
 $$\sigma_X^2 = \frac{\sum_{I = 1}^N \left( X_I - \mu_X \right)^2}{N}$$
 :::
 
-::: {callout-note}
+::: {.callout-note}
 ### Definition
 
 The ***population standard deviation*** ***of a QVAR*** $X$ is represented by the symbol $\sigma_X$, and defined as
 
 $$\sigma_X = \sqrt{\sigma_X^2}$$
 :::
+
 
 ## QUANTITATIVE VARIABLES IN SAMPLES
 
