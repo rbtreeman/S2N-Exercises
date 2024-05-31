@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fresh Quarto Website - About</title>
+<title>Fresh Quarto Website - Mermaid Diagrams</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,6 +100,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="default">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -128,7 +132,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./sample.html"> 
-<span class="menu-text">Quantitative Variables in Finite Populations and Samples</span></a>
+<span class="menu-text">Sample</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./Mermaid Diagrams.html" aria-current="page"> 
+<span class="menu-text">Mermaid Diagrams</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -142,14 +150,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#basic-diagram" id="toc-basic-diagram" class="nav-link active" data-scroll-target="#basic-diagram">Basic Diagram</a></li>
+  <li><a href="#adding-color" id="toc-adding-color" class="nav-link" data-scroll-target="#adding-color">Adding Color</a></li>
+  <li><a href="#live-editing-functionality" id="toc-live-editing-functionality" class="nav-link" data-scroll-target="#live-editing-functionality">Live Editing Functionality</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Mermaid Diagrams</h1>
 </div>
 
 
@@ -166,15 +182,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="basic-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="basic-diagram">Basic Diagram</h2>
+<pre><code>graph LR
+    A(B)
+    A --&gt;|7/10| B(B)
+    A --&gt;|3/10| C(R)
+    B --&gt;|7/10| D(B)
+    B --&gt;|3/10| E(R)
+    C --&gt;|7/10| F(B)
+    C --&gt;|3/10| G(R)
+    D --&gt;|7/10| H(B)
+    D --&gt;|3/10| I(R)
+    E --&gt;|7/10| J(B)
+    E --&gt;|3/10| K(R)
+    F --&gt;|7/10| L(B)
+    F --&gt;|3/10| M(R)
+    G --&gt;|7/10| N(B)
+    G --&gt;|3/10| O(R)</code></pre>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A(B)
+    A --&gt;|7/10| B(B)
+    A --&gt;|3/10| C(R)
+    B --&gt;|7/10| D(B)
+    B --&gt;|3/10| E(R)
+    C --&gt;|7/10| F(B)
+    C --&gt;|3/10| G(R)
+    D --&gt;|7/10| H(B)
+    D --&gt;|3/10| I(R)
+    E --&gt;|7/10| J(B)
+    E --&gt;|3/10| K(R)
+    F --&gt;|7/10| L(B)
+    F --&gt;|3/10| M(R)
+    G --&gt;|7/10| N(B)
+    G --&gt;|3/10| O(R)
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
+</div>
+</section>
+<section id="adding-color" class="level2">
+<h2 class="anchored" data-anchor-id="adding-color">Adding Color</h2>
+<pre><code>graph LR
+    A(B)
+    A --&gt;|7/10| B(B)
+    A --&gt;|3/10| C(R)
+    B --&gt;|7/10| D(B)
+    B --&gt;|3/10| E(R)
+    C --&gt;|7/10| F(B)
+    C --&gt;|3/10| G(R)
+    D --&gt;|7/10| H(B)
+    D --&gt;|3/10| I(R)
+    E --&gt;|7/10| J(B)
+    E --&gt;|3/10| K(R)
+    F --&gt;|7/10| L(B)
+    F --&gt;|3/10| M(R)
+    G --&gt;|7/10| N(B)
+    G --&gt;|3/10| O(R)
+
+    style C fill:#d65a5a,stroke:#d65a5a
+    style E fill:#d65a5a,stroke:#d65a5a
+    style G fill:#d65a5a,stroke:#d65a5a
+    style I fill:#d65a5a,stroke:#d65a5a
+    style K fill:#d65a5a,stroke:#d65a5a
+    style M fill:#d65a5a,stroke:#d65a5a
+    style O fill:#d65a5a,stroke:#d65a5a
+
+    style A fill:#7878ff,stroke:#7878ff
+    style B fill:#7878ff,stroke:#7878ff
+    style D fill:#7878ff,stroke:#7878ff
+    style F fill:#7878ff,stroke:#7878ff
+    style H fill:#7878ff,stroke:#7878ff
+    style J fill:#7878ff,stroke:#7878ff
+    style L fill:#7878ff,stroke:#7878ff
+    style N fill:#7878ff,stroke:#7878ff</code></pre>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A(B)
+    A --&gt;|7/10| B(B)
+    A --&gt;|3/10| C(R)
+    B --&gt;|7/10| D(B)
+    B --&gt;|3/10| E(R)
+    C --&gt;|7/10| F(B)
+    C --&gt;|3/10| G(R)
+    D --&gt;|7/10| H(B)
+    D --&gt;|3/10| I(R)
+    E --&gt;|7/10| J(B)
+    E --&gt;|3/10| K(R)
+    F --&gt;|7/10| L(B)
+    F --&gt;|3/10| M(R)
+    G --&gt;|7/10| N(B)
+    G --&gt;|3/10| O(R)
+
+    style C fill:#d65a5a,stroke:#d65a5a
+    style E fill:#d65a5a,stroke:#d65a5a
+    style G fill:#d65a5a,stroke:#d65a5a
+    style I fill:#d65a5a,stroke:#d65a5a
+    style K fill:#d65a5a,stroke:#d65a5a
+    style M fill:#d65a5a,stroke:#d65a5a
+    style O fill:#d65a5a,stroke:#d65a5a
+
+    style A fill:#7878ff,stroke:#7878ff
+    style B fill:#7878ff,stroke:#7878ff
+    style D fill:#7878ff,stroke:#7878ff
+    style F fill:#7878ff,stroke:#7878ff
+    style H fill:#7878ff,stroke:#7878ff
+    style J fill:#7878ff,stroke:#7878ff
+    style L fill:#7878ff,stroke:#7878ff
+    style N fill:#7878ff,stroke:#7878ff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="live-editing-functionality" class="level2">
+<h2 class="anchored" data-anchor-id="live-editing-functionality">Live Editing Functionality</h2>
+<p><a href="https://mermaid.live/edit#pako:eNpd0ltrgzAUB_CvIuepA-sSNWp8GMzrLu0G3dvwJdRQhXlBIqyzfvdl2oawPJ388-MQkjPBsSs5hHAaWF8Zu0PRGnI9bqK7a2Vstw8X_x6jixH9S50ljTeHaxppNlE20myqbKzZTNlYs7myiWaflE00-6xsqtkXZVPNviqbaXanbKbZvbK5Zt-UzTX7Li2Y0PChYXUpn3T6MwWIije8gFCWX_WpEgUU7Szh2JdM8LSsRTdAKIaRm8BG0X2c2-Ntv5qkZvJ7mlvYsxbCCb4hxAG1fGQjjDEKHBq4rglnGRNiIdvB2EcecW3qzyb8dJ1sgCyfIORR6lK5iEu8pd3ncrh258uF9utULMMx_wIiOo59">Mermaid Live Editor</a></p>
+<p><img src="savetomd.png" class="img-fluid"></p>
+<p>Pressing the button copies this link which can be pasted into a markdown document to produce the following figure:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>![](https://mermaid.ink/img/pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e?type=png)](https://mermaid.live/edit#pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="https://mermaid.ink/img/pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e?type=png.png" class="img-fluid"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,5 +1,5 @@
 ---
-title: Quantitative Variables in Finite Populations and Samples
+title: Sample
 ---
 
 # Notation, Definitions, and Facts

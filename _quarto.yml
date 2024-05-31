@@ -8,7 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - Quantitative Variables in Finite Populations and Samples.qmd
+      - sample.qmd
+      - Mermaid Diagrams.qmd
 
 format:
   html:

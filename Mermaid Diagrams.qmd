@@ -1,0 +1,133 @@
+---
+title: "Mermaid Diagrams"
+mermaid:
+      theme: default
+---
+
+## Basic Diagram
+
+```
+graph LR
+    A(B)
+    A -->|7/10| B(B)
+    A -->|3/10| C(R)
+    B -->|7/10| D(B)
+    B -->|3/10| E(R)
+    C -->|7/10| F(B)
+    C -->|3/10| G(R)
+    D -->|7/10| H(B)
+    D -->|3/10| I(R)
+    E -->|7/10| J(B)
+    E -->|3/10| K(R)
+    F -->|7/10| L(B)
+    F -->|3/10| M(R)
+    G -->|7/10| N(B)
+    G -->|3/10| O(R)
+```
+```{mermaid}
+graph LR
+    A(B)
+    A -->|7/10| B(B)
+    A -->|3/10| C(R)
+    B -->|7/10| D(B)
+    B -->|3/10| E(R)
+    C -->|7/10| F(B)
+    C -->|3/10| G(R)
+    D -->|7/10| H(B)
+    D -->|3/10| I(R)
+    E -->|7/10| J(B)
+    E -->|3/10| K(R)
+    F -->|7/10| L(B)
+    F -->|3/10| M(R)
+    G -->|7/10| N(B)
+    G -->|3/10| O(R)
+```
+
+## Adding Color
+
+```
+graph LR
+    A(B)
+    A -->|7/10| B(B)
+    A -->|3/10| C(R)
+    B -->|7/10| D(B)
+    B -->|3/10| E(R)
+    C -->|7/10| F(B)
+    C -->|3/10| G(R)
+    D -->|7/10| H(B)
+    D -->|3/10| I(R)
+    E -->|7/10| J(B)
+    E -->|3/10| K(R)
+    F -->|7/10| L(B)
+    F -->|3/10| M(R)
+    G -->|7/10| N(B)
+    G -->|3/10| O(R)
+
+    style C fill:#d65a5a,stroke:#d65a5a
+    style E fill:#d65a5a,stroke:#d65a5a
+    style G fill:#d65a5a,stroke:#d65a5a
+    style I fill:#d65a5a,stroke:#d65a5a
+    style K fill:#d65a5a,stroke:#d65a5a
+    style M fill:#d65a5a,stroke:#d65a5a
+    style O fill:#d65a5a,stroke:#d65a5a
+
+    style A fill:#7878ff,stroke:#7878ff
+    style B fill:#7878ff,stroke:#7878ff
+    style D fill:#7878ff,stroke:#7878ff
+    style F fill:#7878ff,stroke:#7878ff
+    style H fill:#7878ff,stroke:#7878ff
+    style J fill:#7878ff,stroke:#7878ff
+    style L fill:#7878ff,stroke:#7878ff
+    style N fill:#7878ff,stroke:#7878ff
+```
+
+```{mermaid}
+graph LR
+    A(B)
+    A -->|7/10| B(B)
+    A -->|3/10| C(R)
+    B -->|7/10| D(B)
+    B -->|3/10| E(R)
+    C -->|7/10| F(B)
+    C -->|3/10| G(R)
+    D -->|7/10| H(B)
+    D -->|3/10| I(R)
+    E -->|7/10| J(B)
+    E -->|3/10| K(R)
+    F -->|7/10| L(B)
+    F -->|3/10| M(R)
+    G -->|7/10| N(B)
+    G -->|3/10| O(R)
+
+    style C fill:#d65a5a,stroke:#d65a5a
+    style E fill:#d65a5a,stroke:#d65a5a
+    style G fill:#d65a5a,stroke:#d65a5a
+    style I fill:#d65a5a,stroke:#d65a5a
+    style K fill:#d65a5a,stroke:#d65a5a
+    style M fill:#d65a5a,stroke:#d65a5a
+    style O fill:#d65a5a,stroke:#d65a5a
+
+    style A fill:#7878ff,stroke:#7878ff
+    style B fill:#7878ff,stroke:#7878ff
+    style D fill:#7878ff,stroke:#7878ff
+    style F fill:#7878ff,stroke:#7878ff
+    style H fill:#7878ff,stroke:#7878ff
+    style J fill:#7878ff,stroke:#7878ff
+    style L fill:#7878ff,stroke:#7878ff
+    style N fill:#7878ff,stroke:#7878ff
+```
+
+## Live Editing Functionality
+
+[Mermaid Live Editor](https://mermaid.live/edit#pako:eNpd0ltrgzAUB_CvIuepA-sSNWp8GMzrLu0G3dvwJdRQhXlBIqyzfvdl2oawPJ388-MQkjPBsSs5hHAaWF8Zu0PRGnI9bqK7a2Vstw8X_x6jixH9S50ljTeHaxppNlE20myqbKzZTNlYs7myiWaflE00-6xsqtkXZVPNviqbaXanbKbZvbK5Zt-UzTX7Li2Y0PChYXUpn3T6MwWIije8gFCWX_WpEgUU7Szh2JdM8LSsRTdAKIaRm8BG0X2c2-Ntv5qkZvJ7mlvYsxbCCb4hxAG1fGQjjDEKHBq4rglnGRNiIdvB2EcecW3qzyb8dJ1sgCyfIORR6lK5iEu8pd3ncrh258uF9utULMMx_wIiOo59)
+
+![](savetomd.png)
+
+Pressing the button copies this link which can be pasted into a markdown document to produce the following figure:
+```html
+![](https://mermaid.ink/img/pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e?type=png)](https://mermaid.live/edit#pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e)
+```
+
+![](https://mermaid.ink/img/pako:eNpd0ltrgzAUB_CvIuepA-viJWryMJjXXdoNurfhS6ihCvOCRFhn_e7LtA1heTr558chJGeCY1dyoHAaWF8Zu0PRGnI9bqK7a2Vstw-X4N5GFyP6l7pLGm8O1zTSbKJspNlU2VizmbKxZnNlE80-KZto9lnZVLMvyqaafVU20-xO2Uyze2Vzzb4pm2v2XVowoeFDw-pSPun0ZwoQFW94AVSWX_WpEgUU7Szh2JdM8LSsRTcAFcPITWCj6D7O7fG2X01SM_k9zS3sWQt0gm-gNnasANmE4NAjPiJuaMIZKHEs5Lgo9LEXhNjG_mzCT9fJBsgKMEI-IR6RC3vYX9p9Lodrd75caL9OxTIc8y8tH46e?type=png)
+
+
