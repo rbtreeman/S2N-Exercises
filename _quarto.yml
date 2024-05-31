@@ -10,6 +10,7 @@ website:
         text: Home
       - sample.qmd
       - Mermaid Diagrams.qmd
+      - new document.qmd
 
 format:
   html:

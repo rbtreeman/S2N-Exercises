@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fresh Quarto Website - Sample</title>
+<title>Fresh Quarto Website - testing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -122,7 +93,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./sample.html" aria-current="page"> 
+    <a class="nav-link" href="./sample.html"> 
 <span class="menu-text">Sample</span></a>
   </li>  
   <li class="nav-item">
@@ -130,7 +101,7 @@ window.Quarto = {
 <span class="menu-text">Mermaid Diagrams</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./new document.html"> 
+    <a class="nav-link active" href="./new document.html" aria-current="page"> 
 <span class="menu-text">testing</span></a>
   </li>  
 </ul>
@@ -149,11 +120,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#notation-definitions-and-facts" id="toc-notation-definitions-and-facts" class="nav-link active" data-scroll-target="#notation-definitions-and-facts">Notation, Definitions, and Facts</a>
-  <ul class="collapse">
-  <li><a href="#quantitative-variables-in-populations" id="toc-quantitative-variables-in-populations" class="nav-link" data-scroll-target="#quantitative-variables-in-populations">QUANTITATIVE VARIABLES IN POPULATIONS</a></li>
-  <li><a href="#quantitative-variables-in-samples" id="toc-quantitative-variables-in-samples" class="nav-link" data-scroll-target="#quantitative-variables-in-samples">QUANTITATIVE VARIABLES IN SAMPLES</a></li>
-  </ul></li>
+  <li><a href="#rd-level-header" id="toc-rd-level-header" class="nav-link active" data-scroll-target="#rd-level-header">3rd level header</a></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +129,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sample</h1>
+<h1 class="title">testing</h1>
 </div>
 
 
@@ -179,275 +146,10 @@ window.Quarto = {
 </header>
 
 
-<section id="notation-definitions-and-facts" class="level1">
-<h1>Notation, Definitions, and Facts</h1>
-<section id="quantitative-variables-in-populations" class="level2">
-<h2 class="anchored" data-anchor-id="quantitative-variables-in-populations">QUANTITATIVE VARIABLES IN POPULATIONS</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Notation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A <strong><em>finite population</em></strong> consists of <span class="math inline">\(N\)</span> elements, labelled <span class="math inline">\(I = 1,...,N\)</span>, where <span class="math inline">\(N\)</span> is a real number.</p>
-<p><span class="math inline">\(X\)</span> is the name of a quantitative variable (QVAR).</p>
-<p>For <span class="math inline">\(I = 1,...,N\)</span>, <span class="math inline">\(X_I\)</span> is the value of <span class="math inline">\(X\)</span> for elements <span class="math inline">\(I\)</span>.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>population mean of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(\mu_X\)</span>, and defined as</p>
-<p><span class="math display">\[\mu_X = \frac{\sum_{I = 1}^N X_I}{N}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A <strong><em>deviation from the population mean of a QVAR</em></strong> <span class="math inline">\(X\)</span> <strong><em>for a given element</em></strong> is the difference between the value of <span class="math inline">\(X\)</span> for the given element and the population mean of <span class="math inline">\(X\)</span>.</p>
-<p>The deviation from the population mean of <span class="math inline">\(X\)</span> for element <span class="math inline">\(I\)</span> is represented by the symbol <span class="math inline">\(D_{X_I}\)</span>:</p>
-<p><span class="math display">\[D_{X_I} = X_I - \mu_X\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Fact
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For any finite population and any QVAR <span class="math inline">\(X\)</span>, if you find the deviation from the population mean of <span class="math inline">\(X\)</span> for every element in the population, and then add up all those deviations, you will find that the sum is zero.</p>
-</div>
-</div>
-<p>To put that more succinctly: for any finite population and any quantitative variable <span class="math inline">\(X\)</span>, the sum of the deviations from the means is always equal to 0.</p>
-<p>This is true no matter how many elements there are in the population and no matter what the values of <span class="math inline">\(X\)</span> are for the elements.</p>
-<p>More formally: Given a finite population consisting of any number <span class="math inline">\(N\)</span> of elements, and given any values <span class="math inline">\(X_1,\,X_2,\,...,\,X_N\)</span> of a QVAR <span class="math inline">\(X\)</span>,</p>
-<p><span class="math display">\[\sum_{I=1}^N D_{X_I} = 0\]</span></p>
-<p>or equivalently,</p>
-<p><span class="math display">\[\sum_{I = 1}^N \left( X_I - \mu_X \right) = 0\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Proof of this fact
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>We can prove this equality through several steps of algebra. Every step is just a rearrangement of terms.</p>
-<p><span class="math display">\[\begin{array}{l}
-\sum_{I = 1}^N D_{X_I} = \sum_{I = 1}^N \left( X_I - \mu_X \right) \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{I = 1}^N X_I - \sum_{I = 1}^N \mu_X \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{I = 1}^N X_I - N \mu_X \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = N \left( \frac{\sum_{I = 1}^N X_I}{N} \right) - N \mu_X \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = N \mu_X - N \mu_X \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = 0
-\end{array}\]</span></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>population mean absolute deviation</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(MAD_X\)</span>, and defined as</p>
-<p><span class="math display">\[MAD_X = \frac{\sum_{I = 1}^N \left| X_I - \mu_X \right|}{N}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>population variance</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(\sigma_X^2\)</span>, and defined as</p>
-<p><span class="math display">\[\sigma_X^2 = \frac{\sum_{I = 1}^N \left( X_I - \mu_X \right)^2}{N}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>population standard deviation</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(\sigma_X\)</span>, and defined as</p>
-<p><span class="math display">\[\sigma_X = \sqrt{\sigma_X^2}\]</span></p>
-</div>
-</div>
-</section>
-<section id="quantitative-variables-in-samples" class="level2">
-<h2 class="anchored" data-anchor-id="quantitative-variables-in-samples">QUANTITATIVE VARIABLES IN SAMPLES</h2>
-<p>The notation we use for samples is different from the notation we use for populations.</p>
-<p>For some concepts, the definitions for samples are identical to the definitions for populations, and the only differences are in the notation.</p>
-<p>For other concepts, the differences are not only in the notation—the definitions for samples are similar, but not identical, to the definitions for populations.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Notation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A <strong><em>sample</em></strong> consists of <span class="math inline">\(n\)</span> observations, labelled <span class="math inline">\(i = 1,...,n\)</span>.</p>
-<p><span class="math inline">\(X\)</span> is the name of a quantitative variable.</p>
-<p>For <span class="math inline">\(i = 1,...,n\)</span>, <span class="math inline">\(x_i\)</span> is the value of <span class="math inline">\(X\)</span> for observation <span class="math inline">\(i\)</span>.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition: The sample mean of a QVAR
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>sample mean of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(\bar{x}\)</span>, and defined as</p>
-<p><span class="math display">\[\bar{x} = \frac{\sum_{i = 1}^n x_i}{n}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition: A deviation from the sample mean of a QVAR for a given observation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A <strong><em>deviation from the sample mean of a QVAR</em></strong> <span class="math inline">\(X\)</span> <strong><em>for a given observation</em></strong> is the difference between the value of <span class="math inline">\(X\)</span> for the given observation and the population mean of <span class="math inline">\(X\)</span>. The deviation from the sample mean of <span class="math inline">\(Q\)</span> for observation <span class="math inline">\(i\)</span> is represented by the symbol <span class="math inline">\(d_{X_i}\)</span>:</p>
-<p><span class="math display">\[d_{X_i} = x_i - \bar{x}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Fact
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For every sample and any QVAR <span class="math inline">\(X\)</span>, if you find the deviation from the sample mean of <span class="math inline">\(X\)</span> for every observation in the sample, and then add up all those deviations, you will find that the sum is zero.</p>
-</div>
-</div>
-<p>To put that more succinctly: for any sample and any quantitative variable <span class="math inline">\(X\)</span>, the sum of the deviations from the means is always equal to 0.</p>
-<p>This is true no matter how many observations there are in the sample and no matter what the values of <span class="math inline">\(X\)</span> are for the observations.</p>
-<p>More formally: Given a sample consisting of any number <span class="math inline">\(n\)</span> of observations, and given any values <span class="math inline">\(x_1,\,x_2,\,...,\,x_n\)</span> of a QVAR <span class="math inline">\(X\)</span>,</p>
-<p><span class="math display">\[\sum_{i = 1}^n d_{X_i} = 0\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Proof of this fact
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>We can prove this equality through several steps of algebra. Every step is just a rearrangement of terms.</p>
-<p><span class="math display">\[\begin{array}{l}
-\sum_{i = 1}^n d_{X_i} = \sum_{i = 1}^n \left( x_i - \bar{x} \right) \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{i = 1}^n x_i - \sum_{i = 1}^n \bar{x} \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{i = 1}^n x_i - n \bar{x} \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = n \left( \frac{\sum_{i = 1}^n x_i}{n} \right) - n \bar{x} \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = n \bar{x} - n \bar{x} \\
-\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = 0
-\end{array}\]</span></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition: The sample mean absolute deviation of a QVAR
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>sample mean absolute deviation</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(mad_X\)</span>, and defined as</p>
-<p><span class="math display">\[mad_X = \frac{\sum_{i = 1}^n \left| x_i - \bar{x} \right|}{n - 1}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition: The sample variance of a QVAR
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>sample variance</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(s_X^2\)</span>, and defined as</p>
-<p><span class="math display">\[s_X^2 = \frac{\sum_{i = 1}^n \left( x_i - \bar{x} \right)^2}{n - 1}\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition: The sample standard deviation of a QVAR
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong><em>sample standard deviation</em></strong> <strong><em>of a QVAR</em></strong> <span class="math inline">\(X\)</span> is represented by the symbol <span class="math inline">\(s_X\)</span>, and defined as</p>
-<p><span class="math display">\[s_X = \sqrt{s_X^2}\]</span></p>
-</div>
-</div>
-<p>Edits to this document</p>
+<section id="rd-level-header" class="level3">
+<h3 class="anchored" data-anchor-id="rd-level-header">3rd level header</h3>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
