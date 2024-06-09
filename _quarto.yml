@@ -3,17 +3,24 @@ project:
   output-dir: docs
 
 website:
-  title: "Fresh Quarto Website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - sample.qmd
-      - Mermaid Diagrams.qmd
-      - Alcohol Exercise.qmd
+  title: "Quarto Testing"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Setup"
+        contents:
+          - Intro.qmd
+          - Folders.qmd
+          - Dataset and Codebook.qmd
+      - section: "Writing the do files"
+        contents:
       
+    
 format:
   html:
+    grid:
+      sidebar-width: 350px
     theme: cosmo
     css: styles.css
     toc: true

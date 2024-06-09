@@ -1,0 +1,24 @@
+---
+title: "Introduction"
+toc: true
+---
+Revising for markdown publication
+
+In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing. 
+
+The data you will use come from a survey of students at American colleges and universities conducted in 2001.  The survey focused on alcohol use, but also included questions on many other aspects of college life.
+
+This exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.
+
+A critical dimension of this exercise is documenting your work in such a way that everything you do with your data is **transparent** and **reproducible.**  In this context, that means several things:
+
+>**Writing do-files** containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.  
+
+indicate where files that need to be opened are located and where files that need to be stored should be saved.
+
+>**Constructing a Data Appendix** that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.
+
+
+>**Writing a Read Me file** that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.
+
+When you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.

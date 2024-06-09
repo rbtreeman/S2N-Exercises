@@ -1,11 +1,9 @@
 ---
-title: "Fresh Quarto Website"
+title: "Quarto Testing"
 ---
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>
 
-```{r}
-1 + 1
-```
+The Alcohol Project is also hosted on this website
