@@ -74,7 +74,7 @@
     "href": "Alcohol Exercise.html#general-comments-about-organizing-your-work-and-writing-do-files",
     "title": "Alcohol Exercise",
     "section": "General comments about organizing your work and writing do-files",
-    "text": "General comments about organizing your work and writing do-files\n\nFolder structure and file locations.\nBefore you begin working on your do-files, make sure that you have created a folder hierarchy as described in section II, and that you have put the original data and the codebook in the folders specified section III. As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy. Whenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on."
+    "text": "General comments about organizing your work and writing do-files\n\nFolder structure and file locations.\nBefore you begin working on your do-files, make sure that you have created a folder hierarchy as described here, and that you have put the original data and the codebook in the folders specified here. As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.\nWhenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on."
   },
   {
     "objectID": "about.html",

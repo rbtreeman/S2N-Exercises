@@ -1,6 +1,6 @@
 ---
 title: "Alcohol Exercise"
-toc: True
+toc: true
 ---
 Revising for markdown publication
 
@@ -15,8 +15,8 @@ This exercise asks you to use the data from the alcohol survey to create a numbe
 A critical dimension of this exercise is documenting your work in such a way that everything you do with your data is **transparent** and **reproducible.**  In this context, that means several things:
 
 >**Writing do-files** containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.  
- 
->**Saving all your work**—including your do-files, the original survey data file, and some accompanying documents—in a set of folders with a well-defined structure, and using relative directory paths in your do-files to indicate where files that need to be opened are located and where files that need to be stored should be saved.
+
+indicate where files that need to be opened are located and where files that need to be stored should be saved.
 
 >**Constructing a Data Appendix** that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.
 
@@ -36,7 +36,7 @@ Wherever you store these folders, be sure that there is system in place to autom
 Create your folders.  An essential step toward ensuring that your data processing and analysis are easily reproducible is creating a folder hierarchy—a set of folders (and folders-within-folders) with a well-defined structure—in which you store your data, command files, and accompanying documents.  You should create this set of folders at the very beginning of your work—before you even obtain the data you will be using.
 
 You will keep all your files in these folders while you work on this exercise, and when you have finished you will use them to store the electronic documentation that you submit with your printed report.
- 
+
 ### Create the folder hierarchy for this exercise
 
 Make a new folder with the name `Your-Name-Alcohol-Exercise`, and save it in the location you chose to save your work in.  This will be the main folder in which you store all of your work for this exercise.
@@ -55,7 +55,7 @@ In the `/Graphs` folder create the following sub-folders
 /Graphs/For-Report
 ```
 
-Finally, in the `/Original-Data folder` create the following subfolder
+Finally, in the `/Original-Data` folder create the following subfolder
 ```
 /Original-Data/Metadata
 ```
@@ -141,8 +141,8 @@ You will not need to turn in written answers to these questions, and you will no
 
 ## General comments about organizing your work and writing do-files
 ### Folder structure and file locations.
-Before you begin working on your do-files, make sure that you have created a folder hierarchy as described in section II, and that you have put the original data and the codebook in the folders specified section III.  As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.
-Whenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on.  
+Before you begin working on your do-files, make sure that you have created a folder hierarchy as described [here](https://connor1883.github.io/quarto-demo/Alcohol%20Exercise.html#create-a-set-of-folders-to-store-your-work-in), and that you have put the original data and the codebook in the folders specified [here](https://connor1883.github.io/quarto-demo/Alcohol%20Exercise.html#dataset-and-codebook).  As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.
 
+Whenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on.  
 
 
