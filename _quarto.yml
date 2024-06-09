@@ -10,8 +10,8 @@ website:
         text: Home
       - sample.qmd
       - Mermaid Diagrams.qmd
-      - new document.qmd
-
+      - Alcohol Exercise.qmd
+      
 format:
   html:
     theme: cosmo

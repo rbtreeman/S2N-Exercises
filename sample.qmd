@@ -1,5 +1,5 @@
 ---
-title: Sample
+title: "sample"
 ---
 
 # Notation, Definitions, and Facts
@@ -177,6 +177,3 @@ The ***sample standard deviation*** ***of a QVAR*** $X$ is represented by the sy
 
 $$s_X = \sqrt{s_X^2}$$
 :::
-
-
-Edits to this document

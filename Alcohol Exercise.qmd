@@ -1,0 +1,148 @@
+---
+title: "Alcohol Exercise"
+toc: True
+---
+Revising for markdown publication
+
+# Introduction
+
+In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing. 
+
+The data you will use come from a survey of students at American colleges and universities conducted in 2001.  The survey focused on alcohol use, but also included questions on many other aspects of college life.
+
+This exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.
+
+A critical dimension of this exercise is documenting your work in such a way that everything you do with your data is **transparent** and **reproducible.**  In this context, that means several things:
+
+>**Writing do-files** containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.  
+ 
+>**Saving all your work**—including your do-files, the original survey data file, and some accompanying documents—in a set of folders with a well-defined structure, and using relative directory paths in your do-files to indicate where files that need to be opened are located and where files that need to be stored should be saved.
+
+>**Constructing a Data Appendix** that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.
+
+
+>**Writing a Read Me file** that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.
+
+When you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.
+
+## Create a set of folders to store your work in
+
+Decide where you will keep your work.  Depending on your preferences and the technology you are using, you may store these folders locally (on the hard disk of a computer you will be using), on a storage server or course management system maintained by your institution, or on-line [using a platform such as the [Open Science Framework](www.osf.io), [Dropbox](www.dropbox.com), or [Google Drive](www.google.com/drive/)]. 
+
+In any case, you should choose a place to store these folders that is secure and that you will be able to access easily while you work on this exercise.  
+
+Wherever you store these folders, be sure that there is system in place to automatically back them up, or that you manually maintain an up-to-date set of back-up files at all times.
+
+Create your folders.  An essential step toward ensuring that your data processing and analysis are easily reproducible is creating a folder hierarchy—a set of folders (and folders-within-folders) with a well-defined structure—in which you store your data, command files, and accompanying documents.  You should create this set of folders at the very beginning of your work—before you even obtain the data you will be using.
+
+You will keep all your files in these folders while you work on this exercise, and when you have finished you will use them to store the electronic documentation that you submit with your printed report.
+ 
+### Create the folder hierarchy for this exercise
+
+Make a new folder with the name `Your-Name-Alcohol-Exercise`, and save it in the location you chose to save your work in.  This will be the main folder in which you store all of your work for this exercise.
+
+
+Next create the following folders and sub-folders:
+```
+./Your-Name-Alcohol-Exercise/Original-Data
+./Your-Name-Alcohol-Exercise/Command-Files
+./Your-Name-Alcohol-Exercise/Graphs
+```
+
+In the `/Graphs` folder create the following sub-folders
+```
+/Graphs/For-Data-Appendix
+/Graphs/For-Report
+```
+
+Finally, in the `/Original-Data folder` create the following subfolder
+```
+/Original-Data/Metadata
+```
+
+Your completed folder hierarchy should look like this
+```
+./Your-Name-Alcohol-Exercise/Original-Data/Metadata
+./Your-Name-Alcohol-Exercise/Command-Files
+./Your-Name-Alcohol-Exercise/Graphs/For-Data-Appendix
+./Your-Name-Alcohol-Exercise/Graphs/For-Report
+```
+
+::: {.callout-tip collapse="true"}
+Be sure to build this folder hierarchy before you proceed to the next steps of this exercise.  Having these folders set up in advance so that you have a place to put the various files you obtain or create while you work on this exercise will help things go smoothly.
+:::
+
+## Dataset and Codebook 
+
+Download and examine the dataset and codebook you will use for this exercise
+
+Find and explore the website where the data for this exercise are stored.  The data used in this exercise come from a study titled Harvard School of Public Health College Alcohol Study, 2001.  This study is archived at the Inter-University Consortium for Political and Social Research (ICPSR); its ICPSR study number is 4291.   
+
+Go to the [ICPSR website](www.icpsr.umich.edu) (www.icpsr.umich.edu), and search for this study.
+When you have found the page for this study, read the information provided there
+
+::: {.callout-tip collapse="true"}
+Some of the information on the webpage for the dataset may have to do with technical matters you don’t understand or details that may not appear important, but that is OK.  Just read through the page and get out of it what you can.
+:::
+
+### Download the dataset and codebook
+Before you can download the data, you need to create an account on the ICPSR website. Once you have done so, log in, go to the main page for the 2001 alcohol study, and click on the "Download" button.  You will get a menu of formats to choose from, including SAS, SPSS, Stata, and ASCII.  From this menu, select Stata.
+
+The data file will be downloaded in a zipped folder.  When you unzip and look inside the folder, you will see that it contains several documents, as well as a subfolder called `/DS0001`  For this exercise, you will need to use only two of the files you downloaded, both of which will be stored in the `/DS0001` subfolder: 
+
+> `04291-0001-Data.dta`  This file contains the data from the survey, stored in Stata's .dta format.  This file will be referred to as the "original data file" for this exercise.
+
+> `04291-0001-Codebook.pdf`  This is the codebook for the 2001 alcohol survey.  It will be referred to as the "metadata" for the original data file.
+
+You should save copies of both of these files in the folder hierarchy you created for this exercise.
+
+Save the original data file in the `/Original-Data` folder.
+
+Save the codebook in the `/Metadata` folder (which is inside your Original-Data folder).
+
+### Examine the codebook and dataset
+
+Examine the codebook and original data file to familiarize yourself with the information they contain.
+
+In particular, by reading the codebook and using Stata to explore the contents of the data, answer the following questions:
+
+>What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?
+
+>How many observations are there in the dataset?
+
+>How many variables are there in the dataset?
+
+>What is the unit of analysis for the dataset?  
+
+>What population was the sample represented in this dataset taken from?
+
+For this exercise, you will need to use six variables from alcohol study.  In the original data file, these variables have the names `A6, B8, B9, C13, G6,` and `G11`.
+
+For each of these variables, answer the following questions:
+
+>How is the variable defined, or what does it represent?
+
+>What units is the variable measured in, or what is the coding scheme?
+
+>Is it categorical or quantitative?  
+
+>If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.
+
+>It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?
+
+>For each categorical variable, decide whether the categories are ordered or unordered
+
+Finally, suppose you wanted know what college or university each student in the sample attended.  Would you be able to find that out using the codebook and dataset you downloaded from ICPSR?  If so, how would you do so?  If not, do you have any idea why that information is not provided?
+
+::: {.callout-tip collapse="true"}
+You will not need to turn in written answers to these questions, and you will not need to turn in do-files that document this preliminary exploration of your data.  However, it is important to convince yourself that you understand all of the questions well.  If you are hazy on any of them, you are likely to encounter trouble as you work on the parts of the exercise that you do have to turn in.
+:::
+
+
+## General comments about organizing your work and writing do-files
+### Folder structure and file locations.
+Before you begin working on your do-files, make sure that you have created a folder hierarchy as described in section II, and that you have put the original data and the codebook in the folders specified section III.  As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.
+Whenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on.  
+
+
+

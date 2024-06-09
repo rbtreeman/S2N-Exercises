@@ -1,0 +1,388 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={sample},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{sample}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Notation, Definitions, and
+Facts}\label{notation-definitions-and-facts}
+
+\subsection{QUANTITATIVE VARIABLES IN
+POPULATIONS}\label{quantitative-variables-in-populations}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notation}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+A \textbf{\emph{finite population}} consists of \(N\) elements, labelled
+\(I = 1,...,N\), where \(N\) is a real number.
+
+\(X\) is the name of a quantitative variable (QVAR).
+
+For \(I = 1,...,N\), \(X_I\) is the value of \(X\) for elements \(I\).
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{population mean of a QVAR}} \(X\) is represented by
+the symbol \(\mu_X\), and defined as
+
+\[\mu_X = \frac{\sum_{I = 1}^N X_I}{N}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+A \textbf{\emph{deviation from the population mean of a QVAR}} \(X\)
+\textbf{\emph{for a given element}} is the difference between the value
+of \(X\) for the given element and the population mean of \(X\).
+
+The deviation from the population mean of \(X\) for element \(I\) is
+represented by the symbol \(D_{X_I}\):
+
+\[D_{X_I} = X_I - \mu_X\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Fact}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+For any finite population and any QVAR \(X\), if you find the deviation
+from the population mean of \(X\) for every element in the population,
+and then add up all those deviations, you will find that the sum is
+zero.
+
+\end{tcolorbox}
+
+To put that more succinctly: for any finite population and any
+quantitative variable \(X\), the sum of the deviations from the means is
+always equal to 0.
+
+This is true no matter how many elements there are in the population and
+no matter what the values of \(X\) are for the elements.
+
+More formally: Given a finite population consisting of any number \(N\)
+of elements, and given any values \(X_1,\,X_2,\,...,\,X_N\) of a QVAR
+\(X\),
+
+\[\sum_{I=1}^N D_{X_I} = 0\]
+
+or equivalently,
+
+\[\sum_{I = 1}^N \left( X_I - \mu_X \right) = 0\]
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Proof of this fact}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+We can prove this equality through several steps of algebra. Every step
+is just a rearrangement of terms.
+
+\[\begin{array}{l}
+\sum_{I = 1}^N D_{X_I} = \sum_{I = 1}^N \left( X_I - \mu_X \right) \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{I = 1}^N X_I - \sum_{I = 1}^N \mu_X \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{I = 1}^N X_I - N \mu_X \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = N \left( \frac{\sum_{I = 1}^N X_I}{N} \right) - N \mu_X \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = N \mu_X - N \mu_X \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = 0
+\end{array}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{population mean absolute deviation}} \textbf{\emph{of
+a QVAR}} \(X\) is represented by the symbol \(MAD_X\), and defined as
+
+\[MAD_X = \frac{\sum_{I = 1}^N \left| X_I - \mu_X \right|}{N}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{population variance}} \textbf{\emph{of a QVAR}} \(X\)
+is represented by the symbol \(\sigma_X^2\), and defined as
+
+\[\sigma_X^2 = \frac{\sum_{I = 1}^N \left( X_I - \mu_X \right)^2}{N}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{population standard deviation}} \textbf{\emph{of a
+QVAR}} \(X\) is represented by the symbol \(\sigma_X\), and defined as
+
+\[\sigma_X = \sqrt{\sigma_X^2}\]
+
+\end{tcolorbox}
+
+\subsection{QUANTITATIVE VARIABLES IN
+SAMPLES}\label{quantitative-variables-in-samples}
+
+The notation we use for samples is different from the notation we use
+for populations.
+
+For some concepts, the definitions for samples are identical to the
+definitions for populations, and the only differences are in the
+notation.
+
+For other concepts, the differences are not only in the notation---the
+definitions for samples are similar, but not identical, to the
+definitions for populations.
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notation}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+A \textbf{\emph{sample}} consists of \(n\) observations, labelled
+\(i = 1,...,n\).
+
+\(X\) is the name of a quantitative variable.
+
+For \(i = 1,...,n\), \(x_i\) is the value of \(X\) for observation
+\(i\).
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition: The sample mean of a QVAR}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{sample mean of a QVAR}} \(X\) is represented by the
+symbol \(\bar{x}\), and defined as
+
+\[\bar{x} = \frac{\sum_{i = 1}^n x_i}{n}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition: A deviation from the sample mean of a QVAR for a given
+observation}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+A \textbf{\emph{deviation from the sample mean of a QVAR}} \(X\)
+\textbf{\emph{for a given observation}} is the difference between the
+value of \(X\) for the given observation and the population mean of
+\(X\). The deviation from the sample mean of \(Q\) for observation \(i\)
+is represented by the symbol \(d_{X_i}\):
+
+\[d_{X_i} = x_i - \bar{x}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Fact}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+For every sample and any QVAR \(X\), if you find the deviation from the
+sample mean of \(X\) for every observation in the sample, and then add
+up all those deviations, you will find that the sum is zero.
+
+\end{tcolorbox}
+
+To put that more succinctly: for any sample and any quantitative
+variable \(X\), the sum of the deviations from the means is always equal
+to 0.
+
+This is true no matter how many observations there are in the sample and
+no matter what the values of \(X\) are for the observations.
+
+More formally: Given a sample consisting of any number \(n\) of
+observations, and given any values \(x_1,\,x_2,\,...,\,x_n\) of a QVAR
+\(X\),
+
+\[\sum_{i = 1}^n d_{X_i} = 0\]
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Proof of this fact}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+We can prove this equality through several steps of algebra. Every step
+is just a rearrangement of terms.
+
+\[\begin{array}{l}
+\sum_{i = 1}^n d_{X_i} = \sum_{i = 1}^n \left( x_i - \bar{x} \right) \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{i = 1}^n x_i - \sum_{i = 1}^n \bar{x} \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = \sum_{i = 1}^n x_i - n \bar{x} \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = n \left( \frac{\sum_{i = 1}^n x_i}{n} \right) - n \bar{x} \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = n \bar{x} - n \bar{x} \\
+\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, = 0
+\end{array}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition: The sample mean absolute deviation of a QVAR}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{sample mean absolute deviation}} \textbf{\emph{of a
+QVAR}} \(X\) is represented by the symbol \(mad_X\), and defined as
+
+\[mad_X = \frac{\sum_{i = 1}^n \left| x_i - \bar{x} \right|}{n - 1}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition: The sample variance of a QVAR}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{sample variance}} \textbf{\emph{of a QVAR}} \(X\) is
+represented by the symbol \(s_X^2\), and defined as
+
+\[s_X^2 = \frac{\sum_{i = 1}^n \left( x_i - \bar{x} \right)^2}{n - 1}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colback=white, breakable, opacityback=0, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Definition: The sample standard deviation of a QVAR}, left=2mm, rightrule=.15mm, bottomtitle=1mm, coltitle=black, titlerule=0mm, bottomrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toprule=.15mm]
+
+The \textbf{\emph{sample standard deviation}} \textbf{\emph{of a QVAR}}
+\(X\) is represented by the symbol \(s_X\), and defined as
+
+\[s_X = \sqrt{s_X^2}\]
+
+\end{tcolorbox}
+
+Edits to this document
+
+!{[}sample.pdf{]}
+
+
+
+\end{document}
