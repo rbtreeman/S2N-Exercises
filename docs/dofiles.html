@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Testing - Introduction</title>
+<title>Quarto Testing - Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Folders.html" rel="next">
+<link href="./processing-do.html" rel="next">
+<link href="./Dataset and Codebook.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Intro.html">Setup</a></li><li class="breadcrumb-item"><a href="./Intro.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./dofiles.html">Overview</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -146,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dofiles.html" class="sidebar-item-text sidebar-link">
+  <a href="./dofiles.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -170,14 +171,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#processing.do" id="toc-processing.do" class="nav-link active" data-scroll-target="#processing.do"><code>processing.do</code></a></li>
+  <li><a href="#data-appendix.do" id="toc-data-appendix.do" class="nav-link" data-scroll-target="#data-appendix.do"><code>data-appendix.do</code></a></li>
+  <li><a href="#results.do" id="toc-results.do" class="nav-link" data-scroll-target="#results.do"><code>results.do</code></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Intro.html">Setup</a></li><li class="breadcrumb-item"><a href="./Intro.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./dofiles.html">Overview</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -194,24 +203,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Revising for markdown publication</p>
-<p>In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing.</p>
-<p>The data you will use come from a survey of students at American colleges and universities conducted in 2001. The survey focused on alcohol use, but also included questions on many other aspects of college life.</p>
-<p>This exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.</p>
-<p>A critical dimension of this exercise is documenting your work in such a way that everything you do with your data is <strong>transparent</strong> and <strong>reproducible.</strong> In this context, that means several things:</p>
-<blockquote class="blockquote">
-<p><strong>Writing do-files</strong> containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.</p>
-</blockquote>
-<p>indicate where files that need to be opened are located and where files that need to be stored should be saved.</p>
-<blockquote class="blockquote">
-<p><strong>Constructing a Data Appendix</strong> that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Writing a Read Me file</strong> that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.</p>
-</blockquote>
-<p>When you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.</p>
+<p>For this exercise you will write three do files:</p>
+<section id="processing.do" class="level3">
+<h3 class="anchored" data-anchor-id="processing.do"><code>processing.do</code></h3>
+<p>In most studies involving statistical data (including this exercise), the original data must be processed before they are ready to be analyzed. For example, this processing may include correcting or removing errors in the original data, dropping variables or observations, generating new variables, and (when your original data are stored in more than one file) combining data files.</p>
+<p>Data on which all the processing necessary to prepare them for analysis has been completed are referred to as “analysis data.” These are the data that will be used to generate the results that are presented in the final report on the study. The processing.do do-file you write for this exercise will contain commands that open up the original data file <code>04291-0001-Data.dta</code>, process the data as necessary to create your analysis data file, and then save the analysis data in a file named analysis.dta.</p>
+</section>
+<section id="data-appendix.do" class="level3">
+<h3 class="anchored" data-anchor-id="data-appendix.do"><code>data-appendix.do</code></h3>
+<p>The Data Appendix is a document that serves as a codebook or user’s guide for your analysis data. It contains variable definitions, coding and summary statistics (numeric and graphical) for all the variables in your analysis data. The <code>data-appendix.do</code> do-file will contain commands that open up your analysis data file <code>analysis.dta</code>and then generate the summary statistics and other information that you will include in the Data Appendix.</p>
+</section>
+<section id="results.do" class="level3">
+<h3 class="anchored" data-anchor-id="results.do"><code>results.do</code></h3>
+<p>Figures, tables and other information presented in a report about a study that were generated by computations performed on statistical data are referred to as “results.”</p>
+<p>For this exercise, the results consist of six bar graphs. The <code>results.do</code> do-file will contain commands that open up <code>analysis.dta</code>, and then generate those graphs, saving each graph when it is created.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -625,10 +633,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./Dataset and Codebook.html" class="pagination-link" aria-label="Dataset and Codebook">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dataset and Codebook</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Folders.html" class="pagination-link" aria-label="Setting up the workspace">
-        <span class="nav-page-text">Setting up the workspace</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./processing-do.html" class="pagination-link" aria-label="processing.do">
+        <span class="nav-page-text">processing.do</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Testing - Introduction</title>
+<title>Quarto Testing - processing.do</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Folders.html" rel="next">
+<link href="./data-appendix-do.html" rel="next">
+<link href="./dofiles.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Intro.html">Setup</a></li><li class="breadcrumb-item"><a href="./Intro.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./processing-do.html">processing.do</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -152,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./processing-do.html" class="sidebar-item-text sidebar-link">
+  <a href="./processing-do.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">processing.do</span></a>
   </div>
 </li>
@@ -170,14 +171,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#writing-processing.do" id="toc-writing-processing.do" class="nav-link active" data-scroll-target="#writing-processing.do">writing processing.do</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Intro.html">Setup</a></li><li class="breadcrumb-item"><a href="./Intro.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./processing-do.html">processing.do</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">processing.do</h1>
 </div>
 
 
@@ -194,24 +201,128 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Revising for markdown publication</p>
-<p>In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing.</p>
-<p>The data you will use come from a survey of students at American colleges and universities conducted in 2001. The survey focused on alcohol use, but also included questions on many other aspects of college life.</p>
-<p>This exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.</p>
-<p>A critical dimension of this exercise is documenting your work in such a way that everything you do with your data is <strong>transparent</strong> and <strong>reproducible.</strong> In this context, that means several things:</p>
-<blockquote class="blockquote">
-<p><strong>Writing do-files</strong> containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.</p>
-</blockquote>
-<p>indicate where files that need to be opened are located and where files that need to be stored should be saved.</p>
-<blockquote class="blockquote">
-<p><strong>Constructing a Data Appendix</strong> that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Writing a Read Me file</strong> that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.</p>
-</blockquote>
-<p>When you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.</p>
+<p>At the beginning of every do-file you write, remember to write a header indicating that the working directory should be set to the Command Files folder when the do-file is executed.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Here’s an example of what that header might say: “Stata’s working directory should be set to the Command-Files folder whenever this do-file (or any part of it) is executed. Before running this do-file, check Stata’s working directory; if necessary, change it to the Command-Files folder.”</p>
+</div>
+</div>
+</div>
+<section id="writing-processing.do" class="level2">
+<h2 class="anchored" data-anchor-id="writing-processing.do">writing processing.do</h2>
+<p>In <code>processing.do</code>, you should write commands that accomplish the following:</p>
+<ul>
+<li><p>Open the <code>04291-0001-Data.dta</code> data file.</p></li>
+<li><p>For this exercise, we want to consider only students who live in campus housing or sororities/fraternities. Therefore, drop all cases for which the student’s residence at college is “Off campus house/apt” or “other.” Also, drop all cases for which the variable representing the student’s residence at college has a missing value.</p></li>
+<li><p>Generate a variable called <code>drunk</code>, which is:</p>
+<ul>
+<li>equal to 0 if the student drank enough to get drunk fewer than three times in the last thirty days</li>
+<li>equal to 1 if the student drank enough to get drunk three or more times in the last thirty days</li>
+<li>equal to missing (“.”) if the variable indicating how many times the student drank enough to get drunk in the last thirty days is missing</li>
+</ul></li>
+<li><p>Generate a variable called <code>hsdrunk</code>, which is:</p>
+<ul>
+<li>equal to 0 if the student had five or more drinks in a row on two or fewer occasions during her/his last year of high school</li>
+<li>equal to 1 if the student had five or more drinks in a row on three or more occasions during her/his last year of high school</li>
+<li>equal to missing (“.”) if the variable indicating how many times the student had five or more drinks in a row during her/his last year of high school is missing</li>
+</ul></li>
+<li><p>Generate a variable called <code>free</code>, which is:</p>
+<ul>
+<li>equal to 0 if the student does not live in alcohol-free housing</li>
+<li>equal to 1 if the student lives in alcohol-free housing</li>
+<li>equal to missing (“.”) if the variable indicating whether or not the student lives in alcohol-free housing is missing</li>
+</ul></li>
+<li><p>Generate a variable called <code>volfree</code>, which is:</p>
+<ul>
+<li>equal to 1 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing</li>
+<li>equal to 0 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing</li>
+<li>equal to missing (“.”) in all other cases</li>
+</ul></li>
+<li><p>Generate a variable called <code>housing</code>, which is:</p>
+<ul>
+<li>equal to 1 if free=0 (the student does not live in alcohol-free housing)</li>
+<li>equal to 2 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing</li>
+<li>equal to 3 if free=1 (the student lives in alcohol-free housing) and all on-campus housing is alcohol-free</li>
+<li>equal to 4 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing</li>
+<li>equal to missing (“.”) in all other cases</li>
+</ul></li>
+<li><p>Generate a new variable that is simply an exact copy of G6, and give it the name <code>health</code>.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You will not use the variable health in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Drop all variables other than the six that were just created</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>It will be easier to do this using Stata’s keep command than Stata’s drop command.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Assign appropriate labels to each of the six variables.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The variable names you defined when you created the variables (drunk, hsdrunk, etc.) are the ones you will use when you write commands for Stata. The labels you apply to the variables are the ones that will appear in figures and tables that Stata produces. Choose short but descriptive labels. For example, an appropriate label for health would be “Health Rating”.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Assign appropriate labels to the values of each of the six variables. For example, based on information given for the variable G6 in the original data file, appropriate value labels for the variable health would be “Excellent” for the value 1, and “Very Good” for 2, “Good” for 3, “Fair” for 4, and “Poor” for 5.</p></li>
+<li><p>Drop all cases for which the value of <code>drunk</code> is missing.</p></li>
+<li><p>Drop all cases for which the value of <code>hsdrunk</code> is missing.</p></li>
+<li><p>Drop all cases for which the value of <code>housing</code> is missing.</p></li>
+<li><p>Save the new data file you have created. This will be your analysis data file—i.e., the fully processed data that you will use to generate the bar graphs for this exercise. Give this analysis data file the name <code>analysis.dta</code>, and save it in your Analysis-Data folder. (Use a relative directory path to specify the location of the Analysis-Data folder.)</p></li>
+</ul>
+<p>Remember to save <code>processing.do</code> in your Command-Files folder.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -625,10 +736,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./dofiles.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Folders.html" class="pagination-link" aria-label="Setting up the workspace">
-        <span class="nav-page-text">Setting up the workspace</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./data-appendix-do.html" class="pagination-link" aria-label="data-appendix.do">
+        <span class="nav-page-text">data-appendix.do</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

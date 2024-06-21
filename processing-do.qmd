@@ -1,0 +1,76 @@
+---
+title: "processing.do"
+---
+
+At the beginning of every do-file you write, remember to write a header indicating that the working directory should be set to the Command Files folder when the do-file is executed.
+
+::: {.callout-tip collapse="true"}
+Here's an example of what that header might say: "Stata's working directory should be set to the Command-Files folder whenever this do-file (or any part of it) is executed.  Before running this do-file, check Stata's working directory; if necessary, change it to the Command-Files folder." 
+:::
+
+## writing processing.do
+
+In `processing.do`, you should write commands that accomplish the following: 
+
+- Open the `04291-0001-Data.dta` data file.  
+
+- For this exercise, we want to consider only students who live in campus housing or sororities/fraternities.  Therefore, drop all cases for which the student’s residence at college is “Off campus house/apt” or “other.”  Also, drop all cases for which the variable representing the student’s residence at college has a missing value.
+
+- Generate a variable called `drunk`, which is:
+
+  - equal to 0 if the student drank enough to get drunk fewer than three times in the last thirty days
+  - equal to 1 if the student drank enough to get drunk three or more times in the last thirty days
+  - equal to missing (".") if the variable indicating how many times the student drank enough to get drunk in the last thirty days is missing
+
+- Generate a variable called `hsdrunk`, which is:
+
+  - equal to 0 if the student had five or more drinks in a row on two or fewer occasions during her/his last year of high school 
+  - equal to 1 if the student had five or more drinks in a row on three or more occasions during her/his last year of high school 
+  - equal to missing (".") if the variable indicating how many times the student had five or more drinks in a row during her/his last year of high school is missing
+  
+- Generate a variable called `free`, which is:
+  - equal to 0 if the student does not live in alcohol-free housing
+  - equal to 1 if the student lives in alcohol-free housing
+  - equal to missing (".") if the variable indicating whether or not the student lives in alcohol-free housing is missing
+  
+- Generate a variable called `volfree`, which is:
+  - equal to 1 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing
+  - equal to 0 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing
+  - equal to missing (".") in all other cases
+
+- Generate a variable called `housing`, which is:
+  - equal to 1 if free=0 (the student does not live in alcohol-free housing)
+  - equal to 2 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing
+  - equal to 3 if free=1 (the student lives in alcohol-free housing) and all on-campus housing is alcohol-free
+  - equal to 4 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing
+  - equal to missing (".") in all other cases
+
+- Generate a new variable that is simply an exact copy of G6, and give it the name `health`. 
+
+::: {.callout-tip collapse="true"}
+You will not use the variable health in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.
+:::
+
+- Drop all variables other than the six that were just created
+
+::: {.callout-tip collapse="true"}
+It will be easier to do this using Stata's keep command than Stata's drop command.
+:::
+
+- Assign appropriate labels to each of the six variables.  
+
+::: {.callout-tip collapse="true"}
+The variable names you defined when you created the variables (drunk, hsdrunk, etc.) are the ones you will use when you write commands for Stata.  The labels you apply to the variables are the ones that will appear in figures and tables that Stata produces.  Choose short but descriptive labels.  For example, an appropriate label for health would be "Health Rating".
+:::
+
+- Assign appropriate labels to the values of each of the six variables.  For example, based on information given for the variable G6 in the original data file, appropriate value labels for the variable health would be "Excellent" for the value 1, and "Very Good" for 2, "Good" for 3, "Fair" for 4, and "Poor" for 5. 
+
+- Drop all cases for which the value of `drunk` is missing.
+- Drop all cases for which the value of `hsdrunk` is missing.
+- Drop all cases for which the value of `housing` is missing.
+
+- Save the new data file you have created.  This will be your analysis data file—i.e., the fully processed data that you will use to generate the bar graphs for this exercise.  Give this analysis data file the name `analysis.dta`, and save it in your Analysis-Data folder.  (Use a relative directory path to specify the location of the Analysis-Data folder.)
+
+
+Remember to save `processing.do` in your Command-Files folder.
+

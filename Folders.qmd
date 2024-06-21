@@ -38,10 +38,13 @@ Finally, in the `/Original-Data` folder create the following subfolder
 
 Your completed folder hierarchy should look like this
 ```
-./Your-Name-Alcohol-Exercise/Original-Data/Metadata
-./Your-Name-Alcohol-Exercise/Command-Files
-./Your-Name-Alcohol-Exercise/Graphs/For-Data-Appendix
-./Your-Name-Alcohol-Exercise/Graphs/For-Report
+./Your-Name-Alcohol-Exercise
+├── Original-Data
+│   └── Metadata
+├── Command-Files
+└── Graphs
+    ├── For-Data-Appendix
+    └── For-Report
 ```
 
 ::: {.callout-tip collapse="true"}

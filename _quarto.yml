@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  page-navigation: true
   title: "Quarto Testing"
   sidebar:
     style: "docked"
@@ -15,7 +16,9 @@ website:
           - Dataset and Codebook.qmd
       - section: "Writing the do files"
         contents:
-      
+          - dofiles.qmd
+          - processing-do.qmd
+          - data-appendix-do.qmd
     
 format:
   html:

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./dofiles.html" rel="next">
+<link href="./Folders.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -135,8 +137,33 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Writing the do files</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Writing the do files</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dofiles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./processing-do.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">processing.do</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-appendix-do.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">data-appendix.do</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
@@ -216,41 +243,23 @@ Tip
 <h3 class="anchored" data-anchor-id="examine-the-codebook-and-dataset">Examine the codebook and dataset</h3>
 <p>Examine the codebook and original data file to familiarize yourself with the information they contain.</p>
 <p>In particular, by reading the codebook and using Stata to explore the contents of the data, answer the following questions:</p>
-<blockquote class="blockquote">
-<p>What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>How many observations are there in the dataset?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>How many variables are there in the dataset?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>What is the unit of analysis for the dataset?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>What population was the sample represented in this dataset taken from?</p>
-</blockquote>
+<ul>
+<li><p>What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?</p></li>
+<li><p>How many observations are there in the dataset?</p></li>
+<li><p>How many variables are there in the dataset?</p></li>
+<li><p>What is the unit of analysis for the dataset?</p></li>
+<li><p>What population was the sample represented in this dataset taken from?</p></li>
+</ul>
 <p>For this exercise, you will need to use six variables from alcohol study. In the original data file, these variables have the names <code>A6, B8, B9, C13, G6,</code> and <code>G11</code>.</p>
 <p>For each of these variables, answer the following questions:</p>
-<blockquote class="blockquote">
-<p>How is the variable defined, or what does it represent?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>What units is the variable measured in, or what is the coding scheme?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Is it categorical or quantitative?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>For each categorical variable, decide whether the categories are ordered or unordered</p>
-</blockquote>
+<ul>
+<li><p>How is the variable defined, or what does it represent?</p></li>
+<li><p>What units is the variable measured in, or what is the coding scheme?</p></li>
+<li><p>Is it categorical or quantitative?</p></li>
+<li><p>If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.</p></li>
+<li><p>It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?</p></li>
+<li><p>For each categorical variable, decide whether the categories are ordered or unordered</p></li>
+</ul>
 <p>Finally, suppose you wanted know what college or university each student in the sample attended. Would you be able to find that out using the codebook and dataset you downloaded from ICPSR? If so, how would you do so? If not, do you have any idea why that information is not provided?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -690,6 +699,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Folders.html" class="pagination-link" aria-label="Setting up the workspace">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Setting up the workspace</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./dofiles.html" class="pagination-link" aria-label="Overview">
+        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

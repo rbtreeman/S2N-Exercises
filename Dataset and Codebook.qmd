@@ -33,31 +33,31 @@ Examine the codebook and original data file to familiarize yourself with the inf
 
 In particular, by reading the codebook and using Stata to explore the contents of the data, answer the following questions:
 
->What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?
+- What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?
 
->How many observations are there in the dataset?
+- How many observations are there in the dataset?
 
->How many variables are there in the dataset?
+- How many variables are there in the dataset?
 
->What is the unit of analysis for the dataset?  
+- What is the unit of analysis for the dataset?  
 
->What population was the sample represented in this dataset taken from?
+- What population was the sample represented in this dataset taken from?
 
 For this exercise, you will need to use six variables from alcohol study.  In the original data file, these variables have the names `A6, B8, B9, C13, G6,` and `G11`.
 
 For each of these variables, answer the following questions:
 
->How is the variable defined, or what does it represent?
+- How is the variable defined, or what does it represent?
 
->What units is the variable measured in, or what is the coding scheme?
+- What units is the variable measured in, or what is the coding scheme?
 
->Is it categorical or quantitative?  
+- Is it categorical or quantitative?  
 
->If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.
+- If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.
 
->It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?
+- It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?
 
->For each categorical variable, decide whether the categories are ordered or unordered
+- For each categorical variable, decide whether the categories are ordered or unordered
 
 Finally, suppose you wanted know what college or university each student in the sample attended.  Would you be able to find that out using the codebook and dataset you downloaded from ICPSR?  If so, how would you do so?  If not, do you have any idea why that information is not provided?
 
