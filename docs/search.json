@@ -56,23 +56,23 @@
   {
     "objectID": "readme.html",
     "href": "readme.html",
-    "title": "README",
+    "title": "Writing the README",
     "section": "",
     "text": "The Read Me file is a document that provides information about the electronic files you have assembled to document your work for this exercise.\nIt should consist of two main sections.\nThose instructions should be written in plain English, and they should be clear and detailed enough that someone unfamiliar with this exercise would actually be able to follow them and replicate everything you did with your data.",
     "crumbs": [
       "The README File",
-      "README"
+      "Writing the README"
     ]
   },
   {
     "objectID": "readme.html#formatting-the-read-me-file",
     "href": "readme.html#formatting-the-read-me-file",
-    "title": "README",
+    "title": "Writing the README",
     "section": "Formatting the Read Me file",
     "text": "Formatting the Read Me file\nThe title “Read Me File for XXX” (where you substitute an informative title for XXX) should appear at the top of the document.\nThe name(s) of the authors(s) of the exercise and the date it was turned in should also be shown at the top of the Read Me file. The pages of the Read Me file should be numbered.\nWhen the Read Me file is complete, you should save a copy of it in pdf format. Give the file the name read-me.pdf. A copy of read-me.pdf should be stored in the top level of your main project folder ./Your-Name-Alcohol-Exercise.",
     "crumbs": [
       "The README File",
-      "README"
+      "Writing the README"
     ]
   },
   {
