@@ -1,0 +1,33 @@
+---
+title: "Writing the report"
+---
+
+The printed report you turn in for this exercise will consist of three parts: answers to a series of questions that ask you to interpret the bar graphs you created, the Data Appendix, and printed copies of the graphs.
+
+## Interpretation
+This section of the report should begin with the header "I. Interpretation."  In the body of this section, you should give answers to the following questions:
+
+1) Describe the sample in the analysis.dta data file you created.  What is the unit of observation?  How many observations are there?  Describe the method used to create the sample, and any additional criteria used to include or exclude any groups of individuals.
+
+:::{.callout-note}
+This question is about the cleaned and processed data in the `analysis.dta` file, rather than the original dataset you downloaded from ICPSR.  Nonetheless, to answer it you will need to refer to the codebook for the original study.  However, you will also need to take into account the processing of the data that you did to create `analysis.dta.`
+:::
+
+2) Explain in words what Figure 1 shows.  Is that what you would have expected? If not, how does Figure 1 differ from what you expected?
+
+3) Explain in words what Figure 2 shows.  Does what you see in Figure 2 shed any light on what you saw in Figure 1?  Explain.
+
+4) How many individuals are represented in Figure 1?  (That is, how many observations did Stata use to generate the figure?)  And how many individuals are represented in Figure 2?  If the numbers of individuals represented in Figures 1 and 2 are not the same, explain: were some individuals represented in Figure 1 not represented in Figure 2?  If so, which individuals were these?  And were some individuals represented in Figure 2 not represented in Figure 1?  If so, which individuals were these?  
+
+5) Consider Figure 3.  Which parts of it show information that was already shown in Figures 1 and 2?  Which parts of it show new information?  Summarize in words what Figure 3 shows. 
+
+6) Compare Figure 4 to Figure 1.  Explain what new information is provided by Figure 4, and give some interpretation.
+
+7) Compare Figure 5 to Figure 2.  Explain what new information is provided by Figure 4, and give some interpretation.
+
+8) Compare Figure 6 to Figure 3.  Explain what new information is provided by Figure 4, and give some interpretation.
+
+9) From the figures you created, what general conclusions can you draw about the factors associated with drinking among college students?
+
+
+

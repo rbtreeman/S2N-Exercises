@@ -1,0 +1,34 @@
+---
+title: "Figures"
+---
+
+This section should begin with the header "III. Figures." 
+
+This section should show Figures 1-6, in order. 
+
+Write a caption below each figure that indicates which figure number it is, and gives an informative title for the figure.  For instance, an appropriate caption for Figure 1 would be "Figure 1: Rates of Heavy Drinking in Alcohol-Free vs. Not Alcohol-Free Housing."
+
+:::{.callout-tip}
+Be sure that each caption appears on the same page as the figure it describes.
+:::
+
+## Formatting of the printed report: 
+
+The document should begin with a cover page that gives:
+
+- an informative title (chosen by you)
+- the name(s) of the author(s) of the document
+- the date the assignment was turned in 
+
+The cover page should be followed by the three sections of content described above, each beginning with the appropriate header.
+The pages of the document should be numbered.
+
+## Save an electronic copy of the report:
+
+When the report is complete, you should save a copy of it in pdf format.  Give the file the name `report.pdf`.
+
+:::{.callout-tip}
+report.pdf should be a single electronic document that contains all parts of the printed report:  the cover page and all three content sections.
+:::
+
+A copy of `report.pdf` should be stored in the top level of your main project folder `./Your-Name-Alcohol-Exercise`.  

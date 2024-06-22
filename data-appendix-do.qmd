@@ -2,3 +2,22 @@
 title: "data-appendix.do"
 ---
 
+The `data-appendix.do` do-file will contain commands that generate information that will appear in the Data Appendix (see section VII below).  In particular, `data-appendix.do` should contain commands that accomplish the following:
+
+- Open the data file analysis.dta (which, after you have written and run processing.do, should be saved in your Analysis-Data folder).
+- Generate the following output for each of the five variables (excluding health) in the `analysis.dta` data file: 
+- The number of missing observations and the total (missing plus non-missing) number of observations.
+- The frequency distribution and the percent frequency distribution. 
+- A bar graph showing the percent frequency distribution. 
+
+- When each bar graph is created, a copy should be saved (as a `Stata.gph` graphics file) in the For-Data-Appendix subfolder of the Graphs folder. 
+
+>(In the commands that save these graph files, use relative directory paths to specify the location of the For-Data-Appendix sub-folder.)  Save each graph with the name ``` `var’-dist.gph```, where ``` `var’``` is replaced by the name of the variable.    
+
+- Write comments explaining which commands produce which information and graphs:  Each command that produces information or a graph that will be included in your Data Appendix should be preceded by a comment that describes the output the command will produce.  
+
+:::{.callout-note title="Example:" appearance="simple"}
+Just above a command that generates a table showing the frequency distribution of the variable housing, you would write a comment like:
+
+“The following command generates a table showing the frequency distribution of “housing”.” Remember to save `data-appendix.do` in your Command-Files folder.
+:::

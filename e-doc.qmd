@@ -1,0 +1,59 @@
+---
+title: "Checking your work"
+---
+
+When you have completed the exercise, you should be sure that clean, final versions of all the electronic documents you created are stored in the appropriate locations in the folder hierarchy you created for this exercise. 
+
+Here is a map of which documents should be in which folders:
+
+
+```
+./Your-Name-Alcohol-Exercise
+├── readme.pdf
+├── report.pdf
+├── Original-Data
+│     ├── 04291-0001-Data.dta
+|     └── Metadata
+|         └── 04291-0001-Codebook.pdf
+├── Command-Files
+|   └── Analysis-Data
+|       └── analysis.dta
+└── Graphs
+    ├── For-Data-Appendix
+    |   ├── drunk-dist.gph
+    |   ├── free-dist.gph
+    |   ├── volfree-dist.gph
+    |   ├── housing-dist.gph
+    |   └── hsdrunk-dist.gph
+    └── For-Report
+        ├── figure1.gph
+        ├── figure2.gph
+        ├── figure3.gph
+        ├── figure4.gph
+        ├── figure5.gph
+        └── figure6.gph
+
+```
+
+### Don’t leave any junk lying around in these folders.
+
+Make sure your folders don’t include any sub-folders other than the ones shown above.
+Make sure your folders don’t contain any files other than the ones shown above.
+
+### Test your electronic files to make sure they run.
+
+Find a computer that is not one you have been using while working on this exercise.
+Copy your entire project folder `./Your-Name-Alcohol-Exercise`, with all its contents, onto that computer.
+Then be sure that you can complete the following steps without needing to move around any of the folders or files:
+
+- Launch Stata.
+- Set the working directory to your Command-Files folder.
+- Run the `processing.do` do-file.  After you run this file, check to be sure that the `analysis.dta` data file that you had stored in your Analysis-Data folder was overwritten by a new copy that was created when you ran this do-file.  (You can check that by looking at the “date modified” information for the file.)
+- Run the `data-appendix.do` do-file. Verify that running this do-file generates the desired output.  Also check to be sure that the graphs that were stored in the For-Data-Appendix subfolder of the Graphs folder were overwritten by new versions that were generated when you ran this do-file.
+
+Run the `analysis.do` do-file.  After you run this file, check to be sure that the six graph files that were stored in the `/For-Report` subfolder of the Graphs folder were overwritten by new copies.  
+
+:::{.callout-tip}
+If you encounter any hitches, do not submit your documentation for this exercise until you have figured out what the problems are and resolved them. 
+:::
+

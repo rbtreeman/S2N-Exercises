@@ -1,0 +1,21 @@
+---
+title: "Data Appendix"
+---
+
+This section should begin with the heading "II. Data Appendix." 
+
+The Data Appendix should consist of multiple sections, or “entries,” one for each of the variables in the final data set.
+
+For each variable, the entry in the Data Appendix should give: 
+
+- The name of the variable.
+
+- The number of missing observations, in the format m/n, where m represents the number of missing observations and n represents the total number of observations (missing plus non-missing).
+
+- A definition of the variable.
+
+- The possible values of the variable.
+
+- The coding of the values; i.e., an explanation of what each value of the variable represents.
+
+- A table showing the frequency distribution and the percent frequency distribution.  If the categorical variable is an ordered categorical variable, this table should also show the cumulative percent frequency distribution.

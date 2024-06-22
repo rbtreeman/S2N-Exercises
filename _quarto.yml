@@ -4,7 +4,7 @@ project:
 
 website:
   page-navigation: true
-  title: "Quarto Testing"
+  title: "Alcohol Project"
   sidebar:
     style: "docked"
     search: true
@@ -19,7 +19,18 @@ website:
           - dofiles.qmd
           - processing-do.qmd
           - data-appendix-do.qmd
-    
+          - analysis-do.qmd
+      - section: "The README File"
+        contents:
+          - readme.qmd
+      - section: "The printed report"
+        contents:
+          - report.qmd
+          - report-appendix.qmd
+          - report-figures.qmd
+      - section: "Electronic Documentation"
+        contents: 
+          - e-doc.qmd
 format:
   html:
     grid:

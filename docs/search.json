@@ -21,6 +21,61 @@
     "text": "The notation we use for samples is different from the notation we use for populations.\nFor some concepts, the definitions for samples are identical to the definitions for populations, and the only differences are in the notation.\nFor other concepts, the differences are not only in the notation—the definitions for samples are similar, but not identical, to the definitions for populations.\n\n\n\n\n\n\nNotation\n\n\n\nA sample consists of \\(n\\) observations, labelled \\(i = 1,...,n\\).\n\\(X\\) is the name of a quantitative variable.\nFor \\(i = 1,...,n\\), \\(x_i\\) is the value of \\(X\\) for observation \\(i\\).\n\n\n\n\n\n\n\n\nDefinition: The sample mean of a QVAR\n\n\n\nThe sample mean of a QVAR \\(X\\) is represented by the symbol \\(\\bar{x}\\), and defined as\n\\[\\bar{x} = \\frac{\\sum_{i = 1}^n x_i}{n}\\]\n\n\n\n\n\n\n\n\nDefinition: A deviation from the sample mean of a QVAR for a given observation\n\n\n\nA deviation from the sample mean of a QVAR \\(X\\) for a given observation is the difference between the value of \\(X\\) for the given observation and the population mean of \\(X\\). The deviation from the sample mean of \\(Q\\) for observation \\(i\\) is represented by the symbol \\(d_{X_i}\\):\n\\[d_{X_i} = x_i - \\bar{x}\\]\n\n\n\n\n\n\n\n\nFact\n\n\n\nFor every sample and any QVAR \\(X\\), if you find the deviation from the sample mean of \\(X\\) for every observation in the sample, and then add up all those deviations, you will find that the sum is zero.\n\n\nTo put that more succinctly: for any sample and any quantitative variable \\(X\\), the sum of the deviations from the means is always equal to 0.\nThis is true no matter how many observations there are in the sample and no matter what the values of \\(X\\) are for the observations.\nMore formally: Given a sample consisting of any number \\(n\\) of observations, and given any values \\(x_1,\\,x_2,\\,...,\\,x_n\\) of a QVAR \\(X\\),\n\\[\\sum_{i = 1}^n d_{X_i} = 0\\]\n\n\n\n\n\n\nProof of this fact\n\n\n\n\n\nWe can prove this equality through several steps of algebra. Every step is just a rearrangement of terms.\n\\[\\begin{array}{l}\n\\sum_{i = 1}^n d_{X_i} = \\sum_{i = 1}^n \\left( x_i - \\bar{x} \\right) \\\\\n\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = \\sum_{i = 1}^n x_i - \\sum_{i = 1}^n \\bar{x} \\\\\n\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = \\sum_{i = 1}^n x_i - n \\bar{x} \\\\\n\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = n \\left( \\frac{\\sum_{i = 1}^n x_i}{n} \\right) - n \\bar{x} \\\\\n\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = n \\bar{x} - n \\bar{x} \\\\\n\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = 0\n\\end{array}\\]\n\n\n\n\n\n\n\n\n\nDefinition: The sample mean absolute deviation of a QVAR\n\n\n\nThe sample mean absolute deviation of a QVAR \\(X\\) is represented by the symbol \\(mad_X\\), and defined as\n\\[mad_X = \\frac{\\sum_{i = 1}^n \\left| x_i - \\bar{x} \\right|}{n - 1}\\]\n\n\n\n\n\n\n\n\nDefinition: The sample variance of a QVAR\n\n\n\nThe sample variance of a QVAR \\(X\\) is represented by the symbol \\(s_X^2\\), and defined as\n\\[s_X^2 = \\frac{\\sum_{i = 1}^n \\left( x_i - \\bar{x} \\right)^2}{n - 1}\\]\n\n\n\n\n\n\n\n\nDefinition: The sample standard deviation of a QVAR\n\n\n\nThe sample standard deviation of a QVAR \\(X\\) is represented by the symbol \\(s_X\\), and defined as\n\\[s_X = \\sqrt{s_X^2}\\]"
   },
   {
+    "objectID": "report-figures.html",
+    "href": "report-figures.html",
+    "title": "Figures",
+    "section": "",
+    "text": "This section should begin with the header “III. Figures.”\nThis section should show Figures 1-6, in order.\nWrite a caption below each figure that indicates which figure number it is, and gives an informative title for the figure. For instance, an appropriate caption for Figure 1 would be “Figure 1: Rates of Heavy Drinking in Alcohol-Free vs. Not Alcohol-Free Housing.”",
+    "crumbs": [
+      "The printed report",
+      "Figures"
+    ]
+  },
+  {
+    "objectID": "report-figures.html#formatting-of-the-printed-report",
+    "href": "report-figures.html#formatting-of-the-printed-report",
+    "title": "Figures",
+    "section": "Formatting of the printed report:",
+    "text": "Formatting of the printed report:\nThe document should begin with a cover page that gives:\n\nan informative title (chosen by you)\nthe name(s) of the author(s) of the document\nthe date the assignment was turned in\n\nThe cover page should be followed by the three sections of content described above, each beginning with the appropriate header. The pages of the document should be numbered.",
+    "crumbs": [
+      "The printed report",
+      "Figures"
+    ]
+  },
+  {
+    "objectID": "report-figures.html#save-an-electronic-copy-of-the-report",
+    "href": "report-figures.html#save-an-electronic-copy-of-the-report",
+    "title": "Figures",
+    "section": "Save an electronic copy of the report:",
+    "text": "Save an electronic copy of the report:\nWhen the report is complete, you should save a copy of it in pdf format. Give the file the name report.pdf.\n\n\n\n\n\n\nTip\n\n\n\nreport.pdf should be a single electronic document that contains all parts of the printed report: the cover page and all three content sections.\n\n\nA copy of report.pdf should be stored in the top level of your main project folder ./Your-Name-Alcohol-Exercise.",
+    "crumbs": [
+      "The printed report",
+      "Figures"
+    ]
+  },
+  {
+    "objectID": "readme.html",
+    "href": "readme.html",
+    "title": "README",
+    "section": "",
+    "text": "The Read Me file is a document that provides information about the electronic files you have assembled to document your work for this exercise.\nIt should consist of two main sections.\nThose instructions should be written in plain English, and they should be clear and detailed enough that someone unfamiliar with this exercise would actually be able to follow them and replicate everything you did with your data.",
+    "crumbs": [
+      "The README File",
+      "README"
+    ]
+  },
+  {
+    "objectID": "readme.html#formatting-the-read-me-file",
+    "href": "readme.html#formatting-the-read-me-file",
+    "title": "README",
+    "section": "Formatting the Read Me file",
+    "text": "Formatting the Read Me file\nThe title “Read Me File for XXX” (where you substitute an informative title for XXX) should appear at the top of the document.\nThe name(s) of the authors(s) of the exercise and the date it was turned in should also be shown at the top of the Read Me file. The pages of the Read Me file should be numbered.\nWhen the Read Me file is complete, you should save a copy of it in pdf format. Give the file the name read-me.pdf. A copy of read-me.pdf should be stored in the top level of your main project folder ./Your-Name-Alcohol-Exercise.",
+    "crumbs": [
+      "The README File",
+      "README"
+    ]
+  },
+  {
     "objectID": "Mermaid Diagrams.html",
     "href": "Mermaid Diagrams.html",
     "title": "Mermaid Diagrams",
@@ -56,22 +111,15 @@
     "text": "Project TIER Reproducibility Exercise: Animal House in Alcohol-Free Dorms?\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites\nThe Alcohol Project is also hosted on this website"
   },
   {
-    "objectID": "dofiles.html",
-    "href": "dofiles.html",
-    "title": "Overview",
+    "objectID": "e-doc.html",
+    "href": "e-doc.html",
+    "title": "Checking your work",
     "section": "",
-    "text": "For this exercise you will write three do files:\n\nprocessing.do\nIn most studies involving statistical data (including this exercise), the original data must be processed before they are ready to be analyzed. For example, this processing may include correcting or removing errors in the original data, dropping variables or observations, generating new variables, and (when your original data are stored in more than one file) combining data files.\nData on which all the processing necessary to prepare them for analysis has been completed are referred to as “analysis data.” These are the data that will be used to generate the results that are presented in the final report on the study. The processing.do do-file you write for this exercise will contain commands that open up the original data file 04291-0001-Data.dta, process the data as necessary to create your analysis data file, and then save the analysis data in a file named analysis.dta.\n\n\ndata-appendix.do\nThe Data Appendix is a document that serves as a codebook or user’s guide for your analysis data. It contains variable definitions, coding and summary statistics (numeric and graphical) for all the variables in your analysis data. The data-appendix.do do-file will contain commands that open up your analysis data file analysis.dtaand then generate the summary statistics and other information that you will include in the Data Appendix.\n\n\nresults.do\nFigures, tables and other information presented in a report about a study that were generated by computations performed on statistical data are referred to as “results.”\nFor this exercise, the results consist of six bar graphs. The results.do do-file will contain commands that open up analysis.dta, and then generate those graphs, saving each graph when it is created.",
+    "text": "When you have completed the exercise, you should be sure that clean, final versions of all the electronic documents you created are stored in the appropriate locations in the folder hierarchy you created for this exercise.\nHere is a map of which documents should be in which folders:\n./Your-Name-Alcohol-Exercise\n├── readme.pdf\n├── report.pdf\n├── Original-Data\n│     ├── 04291-0001-Data.dta\n|     └── Metadata\n|         └── 04291-0001-Codebook.pdf\n├── Command-Files\n|   └── Analysis-Data\n|       └── analysis.dta\n└── Graphs\n    ├── For-Data-Appendix\n    |   ├── drunk-dist.gph\n    |   ├── free-dist.gph\n    |   ├── volfree-dist.gph\n    |   ├── housing-dist.gph\n    |   └── hsdrunk-dist.gph\n    └── For-Report\n        ├── figure1.gph\n        ├── figure2.gph\n        ├── figure3.gph\n        ├── figure4.gph\n        ├── figure5.gph\n        └── figure6.gph\n\n\nDon’t leave any junk lying around in these folders.\nMake sure your folders don’t include any sub-folders other than the ones shown above. Make sure your folders don’t contain any files other than the ones shown above.\n\n\nTest your electronic files to make sure they run.\nFind a computer that is not one you have been using while working on this exercise. Copy your entire project folder ./Your-Name-Alcohol-Exercise, with all its contents, onto that computer. Then be sure that you can complete the following steps without needing to move around any of the folders or files:\n\nLaunch Stata.\nSet the working directory to your Command-Files folder.\nRun the processing.do do-file. After you run this file, check to be sure that the analysis.dta data file that you had stored in your Analysis-Data folder was overwritten by a new copy that was created when you ran this do-file. (You can check that by looking at the “date modified” information for the file.)\nRun the data-appendix.do do-file. Verify that running this do-file generates the desired output. Also check to be sure that the graphs that were stored in the For-Data-Appendix subfolder of the Graphs folder were overwritten by new versions that were generated when you ran this do-file.\n\nRun the analysis.do do-file. After you run this file, check to be sure that the six graph files that were stored in the /For-Report subfolder of the Graphs folder were overwritten by new copies.\n\n\n\n\n\n\nTip\n\n\n\nIf you encounter any hitches, do not submit your documentation for this exercise until you have figured out what the problems are and resolved them.",
     "crumbs": [
-      "Writing the do files",
-      "Overview"
+      "Electronic Documentation",
+      "Checking your work"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "Dataset and Codebook.html",
@@ -93,6 +141,46 @@
     "crumbs": [
       "Setup",
       "Dataset and Codebook"
+    ]
+  },
+  {
+    "objectID": "analysis-do.html",
+    "href": "analysis-do.html",
+    "title": "analysis.do",
+    "section": "",
+    "text": "The analysis.do do-file generates the bar graphs that constitute the main analysis you do for this assignment, using the data in your final analysis.dta file. Write commands in analysis.do that accomplish the following:\n\nOpen the data file analysis.dta (which, after you have written and run processing.do, should be saved in your Analysis-Data folder).\nGenerate a bar graph, with two bars, where:\n\none bar represents students living in alcohol-free housing\none bar represents students who do not live in alcohol-free housing\nthe height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days\n\n\nSave this graph in the For-Report subfolder of the Graphs folder, with the name Figure1.gph. (Use a relative directory path to specify the location of the For-Report sub-folder.)\n\nGenerate a bar graph, with two bars, where:\n\none bar represents students who live in alcohol-free housing because they requested it\none bar represents students who live alcohol free housing because they were assigned to it the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days\n\n\nSave this graph in the For-Report subfolder of the Graphs folder, with the name Figure2.gph.\n\nGenerate a bar graph, with four bars, where:\n\neach bar represents students in one of the four categories defined by the variable housing\nthe height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days\nSave this graph in the For-Report subfolder of the Graphs folder, with the name Figure3.gph.\n\nGenerate two side-by-side bar graphs, each consisting of two bars, where:\n\none of the bar graphs represents only students who had five or more drinks in a row on three or more occasions during their last year of high school\none of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school\n\n\nand in each of these graphs,\n\none bar represents students who live in alcohol-free housing\none bar represents students who do not live in alcohol-free housing\nthe height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days\n\nSave this graph in the For-Report subfolder of the Graphs folder, with the name Figure4.gph.\n\nGenerate two side-by side bar graphs, each consisting of two bars, where:\n\none of the bar graphs represents only students who had five or more drinks in a row on\nthree or more occasions during their last year of high school one of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school\n\n\nand in each of these graphs,\n\none bar represents students who live in alcohol-free housing because they requested it\none bar represents students who live alcohol free housing because they were assigned to it\nthe height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days Save this graph in the For-Report subfolder of the Graphs folder, with the name Figure5.gph.\n\n\n\nGenerate two side-by side bar graphs, each consisting of four bars, where:\n\none of the bar graphs represents only students who had five or more drinks in a row on three or more occasions during their last year of high school\none of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school\n\n\nand in each of these graphs,\n\neach bar represents students in one of the four categories defined by the variable housing\nthe height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days\n\nSave this graph in the For-Report subfolder of the Graphs folder, with the name Figure6.gph.\n\n\n\n\n\n\nWrite comments indicating which commands produce which graphs: For example, before the command that generates Figure 4, write a comment like “The following command generates Figure 4.”\n\n\n\nRemember to save analysis.do in your Command-Files folder.\n\nCleaning up your do-files\nWriting the do-files that accomplish the tasks outlined above will be a large part of the work you do for this exercise. For most of the tasks, your first attempt at writing a command or commands won’t work—you will get error messages, or something will be obviously incorrect, and you will need to try again, maybe several times, before you figure out syntax that works.\nWhen you have finally gotten everything in a do-file to run successfully, you may well have accumulated a lot of extra stuff that is no longer relevant: commands that were first tries, false starts, or exploration to figure out how things work.\nAt the end of the exercise, when you are preparing the final electronic documentation to submit with your printed report, you should clean up your do-files: remove any first tries, false starts and exploration that turned out to be mistakes or that do not serve any purpose. The only commands left in the do-files you submit with your documentation should be ones that do something necessary to accomplish the required tasks.\nAnd remember to include comments throughout your do-files explaining the purpose of the commands at each step of the data processing and analysis.\n\n\n\n\n\n\nTip\n\n\n\n\n\nYour do-files of course need to run properly and execute the steps of data processing and analysis that reproduce your results. But they should also be useful documents to a human reader who wants to learn about what you did for this project. Keep that goal in mind as you do your final clean-up of the commands and insert comments.",
+    "crumbs": [
+      "Writing the do files",
+      "analysis.do"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "data-appendix-do.html",
+    "href": "data-appendix-do.html",
+    "title": "data-appendix.do",
+    "section": "",
+    "text": "The data-appendix.do do-file will contain commands that generate information that will appear in the Data Appendix (see section VII below). In particular, data-appendix.do should contain commands that accomplish the following:\n\nOpen the data file analysis.dta (which, after you have written and run processing.do, should be saved in your Analysis-Data folder).\nGenerate the following output for each of the five variables (excluding health) in the analysis.dta data file:\nThe number of missing observations and the total (missing plus non-missing) number of observations.\nThe frequency distribution and the percent frequency distribution.\nA bar graph showing the percent frequency distribution.\nWhen each bar graph is created, a copy should be saved (as a Stata.gph graphics file) in the For-Data-Appendix subfolder of the Graphs folder.\n\n\n(In the commands that save these graph files, use relative directory paths to specify the location of the For-Data-Appendix sub-folder.) Save each graph with the name `var’-dist.gph, where `var’ is replaced by the name of the variable.\n\n\nWrite comments explaining which commands produce which information and graphs: Each command that produces information or a graph that will be included in your Data Appendix should be preceded by a comment that describes the output the command will produce.\n\n\n\n\n\n\n\nExample:\n\n\n\nJust above a command that generates a table showing the frequency distribution of the variable housing, you would write a comment like:\n“The following command generates a table showing the frequency distribution of “housing”.” Remember to save data-appendix.do in your Command-Files folder.",
+    "crumbs": [
+      "Writing the do files",
+      "data-appendix.do"
+    ]
+  },
+  {
+    "objectID": "dofiles.html",
+    "href": "dofiles.html",
+    "title": "Overview",
+    "section": "",
+    "text": "For this exercise you will write three do files:\n\nprocessing.do\nIn most studies involving statistical data (including this exercise), the original data must be processed before they are ready to be analyzed. For example, this processing may include correcting or removing errors in the original data, dropping variables or observations, generating new variables, and (when your original data are stored in more than one file) combining data files.\nData on which all the processing necessary to prepare them for analysis has been completed are referred to as “analysis data.” These are the data that will be used to generate the results that are presented in the final report on the study. The processing.do do-file you write for this exercise will contain commands that open up the original data file 04291-0001-Data.dta, process the data as necessary to create your analysis data file, and then save the analysis data in a file named analysis.dta.\n\n\ndata-appendix.do\nThe Data Appendix is a document that serves as a codebook or user’s guide for your analysis data. It contains variable definitions, coding and summary statistics (numeric and graphical) for all the variables in your analysis data. The data-appendix.do do-file will contain commands that open up your analysis data file analysis.dtaand then generate the summary statistics and other information that you will include in the Data Appendix.\n\n\nresults.do\nFigures, tables and other information presented in a report about a study that were generated by computations performed on statistical data are referred to as “results.”\nFor this exercise, the results consist of six bar graphs. The results.do do-file will contain commands that open up analysis.dta, and then generate those graphs, saving each graph when it is created.",
+    "crumbs": [
+      "Writing the do files",
+      "Overview"
     ]
   },
   {
@@ -148,6 +236,39 @@
     "crumbs": [
       "Writing the do files",
       "processing.do"
+    ]
+  },
+  {
+    "objectID": "report-appendix.html",
+    "href": "report-appendix.html",
+    "title": "Data Appendix",
+    "section": "",
+    "text": "This section should begin with the heading “II. Data Appendix.”\nThe Data Appendix should consist of multiple sections, or “entries,” one for each of the variables in the final data set.\nFor each variable, the entry in the Data Appendix should give:\n\nThe name of the variable.\nThe number of missing observations, in the format m/n, where m represents the number of missing observations and n represents the total number of observations (missing plus non-missing).\nA definition of the variable.\nThe possible values of the variable.\nThe coding of the values; i.e., an explanation of what each value of the variable represents.\nA table showing the frequency distribution and the percent frequency distribution. If the categorical variable is an ordered categorical variable, this table should also show the cumulative percent frequency distribution.",
+    "crumbs": [
+      "The printed report",
+      "Data Appendix"
+    ]
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Writing the report",
+    "section": "",
+    "text": "The printed report you turn in for this exercise will consist of three parts: answers to a series of questions that ask you to interpret the bar graphs you created, the Data Appendix, and printed copies of the graphs.",
+    "crumbs": [
+      "The printed report",
+      "Writing the report"
+    ]
+  },
+  {
+    "objectID": "report.html#interpretation",
+    "href": "report.html#interpretation",
+    "title": "Writing the report",
+    "section": "Interpretation",
+    "text": "Interpretation\nThis section of the report should begin with the header “I. Interpretation.” In the body of this section, you should give answers to the following questions:\n\nDescribe the sample in the analysis.dta data file you created. What is the unit of observation? How many observations are there? Describe the method used to create the sample, and any additional criteria used to include or exclude any groups of individuals.\n\n\n\n\n\n\n\nNote\n\n\n\nThis question is about the cleaned and processed data in the analysis.dta file, rather than the original dataset you downloaded from ICPSR. Nonetheless, to answer it you will need to refer to the codebook for the original study. However, you will also need to take into account the processing of the data that you did to create analysis.dta.\n\n\n\nExplain in words what Figure 1 shows. Is that what you would have expected? If not, how does Figure 1 differ from what you expected?\nExplain in words what Figure 2 shows. Does what you see in Figure 2 shed any light on what you saw in Figure 1? Explain.\nHow many individuals are represented in Figure 1? (That is, how many observations did Stata use to generate the figure?) And how many individuals are represented in Figure 2? If the numbers of individuals represented in Figures 1 and 2 are not the same, explain: were some individuals represented in Figure 1 not represented in Figure 2? If so, which individuals were these? And were some individuals represented in Figure 2 not represented in Figure 1? If so, which individuals were these?\nConsider Figure 3. Which parts of it show information that was already shown in Figures 1 and 2? Which parts of it show new information? Summarize in words what Figure 3 shows.\nCompare Figure 4 to Figure 1. Explain what new information is provided by Figure 4, and give some interpretation.\nCompare Figure 5 to Figure 2. Explain what new information is provided by Figure 4, and give some interpretation.\nCompare Figure 6 to Figure 3. Explain what new information is provided by Figure 4, and give some interpretation.\nFrom the figures you created, what general conclusions can you draw about the factors associated with drinking among college students?",
+    "crumbs": [
+      "The printed report",
+      "Writing the report"
     ]
   }
 ]

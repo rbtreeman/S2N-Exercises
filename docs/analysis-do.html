@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alcohol Project</title>
+<title>Quarto Testing - analysis.do</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./readme.html" rel="next">
+<link href="./data-appendix-do.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,15 +76,13 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Alcohol Project
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./analysis-do.html">analysis.do</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Alcohol Project</a> 
+      <a href="./">Quarto Testing</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./analysis-do.html" class="sidebar-item-text sidebar-link">
+  <a href="./analysis-do.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">analysis.do</span></a>
   </div>
 </li>
@@ -229,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./e-doc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Checking your work</span></a>
+ <span class="menu-text">Electronic Documentation</span></a>
   </div>
 </li>
       </ul>
@@ -244,21 +244,131 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-tier-reproducibility-exercise-animal-house-in-alcohol-free-dorms" id="toc-project-tier-reproducibility-exercise-animal-house-in-alcohol-free-dorms" class="nav-link active" data-scroll-target="#project-tier-reproducibility-exercise-animal-house-in-alcohol-free-dorms">Project TIER Reproducibility Exercise: Animal House in Alcohol-Free Dorms?</a></li>
+  <li><a href="#cleaning-up-your-do-files" id="toc-cleaning-up-your-do-files" class="nav-link active" data-scroll-target="#cleaning-up-your-do-files">Cleaning up your do-files</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./analysis-do.html">analysis.do</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">analysis.do</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="project-tier-reproducibility-exercise-animal-house-in-alcohol-free-dorms" class="level1">
-<h1>Project TIER Reproducibility Exercise: Animal House in Alcohol-Free Dorms?</h1>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a></p>
-<p>The Alcohol Project is also hosted on this website</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The <code>analysis.do</code> do-file generates the bar graphs that constitute the main analysis you do for this assignment, using the data in your final <code>analysis.dta</code> file. Write commands in <code>analysis.do</code> that accomplish the following:</p>
+<ul>
+<li><p>Open the data file analysis.dta (which, after you have written and run <code>processing.do</code>, should be saved in your Analysis-Data folder).</p></li>
+<li><p>Generate a bar graph, with two bars, where:</p>
+<ul>
+<li>one bar represents students living in alcohol-free housing</li>
+<li>one bar represents students who do not live in alcohol-free housing</li>
+<li>the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days</li>
+</ul></li>
+</ul>
+<p>Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure1.gph</code>. (Use a relative directory path to specify the location of the For-Report sub-folder.)</p>
+<ul>
+<li>Generate a bar graph, with two bars, where:
+<ul>
+<li>one bar represents students who live in alcohol-free housing because they requested it</li>
+<li>one bar represents students who live alcohol free housing because they were assigned to it the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days</li>
+</ul></li>
+</ul>
+<p>Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure2.gph</code>.</p>
+<ul>
+<li>Generate a bar graph, with four bars, where:
+<ul>
+<li>each bar represents students in one of the four categories defined by the variable housing</li>
+<li>the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days</li>
+<li>Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure3.gph</code>.</li>
+</ul></li>
+<li>Generate two side-by-side bar graphs, each consisting of two bars, where:
+<ul>
+<li>one of the bar graphs represents only students who had five or more drinks in a row on three or more occasions during their last year of high school</li>
+<li>one of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school</li>
+</ul></li>
+</ul>
+<p><strong>and in each of these graphs,</strong></p>
+<ul>
+<li>one bar represents students who live in alcohol-free housing</li>
+<li>one bar represents students who do not live in alcohol-free housing</li>
+<li>the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days</li>
+</ul>
+<p>Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure4.gph</code>.</p>
+<ul>
+<li>Generate two side-by side bar graphs, each consisting of two bars, where:
+<ul>
+<li>one of the bar graphs represents only students who had five or more drinks in a row on</li>
+<li>three or more occasions during their last year of high school one of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school</li>
+</ul></li>
+</ul>
+<p><strong>and in each of these graphs,</strong></p>
+<ul>
+<li>one bar represents students who live in alcohol-free housing because they requested it</li>
+<li>one bar represents students who live alcohol free housing because they were assigned to it</li>
+<li>the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure5.gph</code>.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Generate two side-by side bar graphs, each consisting of four bars, where:
+<ul>
+<li>one of the bar graphs represents only students who had five or more drinks in a row on three or more occasions during their last year of high school</li>
+<li>one of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school</li>
+</ul></li>
+</ul>
+<p><strong>and in each of these graphs,</strong></p>
+<ul>
+<li>each bar represents students in one of the four categories defined by the variable housing</li>
+<li>the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days</li>
+</ul>
+<p>Save this graph in the For-Report subfolder of the Graphs folder, with the name <code>Figure6.gph</code>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Write comments indicating which commands produce which graphs: For example, before the command that generates Figure 4, write a comment like “The following command generates Figure 4.”</p>
+</div>
+</div>
+</div>
+<p>Remember to save <code>analysis.do</code> in your Command-Files folder.</p>
+<section id="cleaning-up-your-do-files" class="level3">
+<h3 class="anchored" data-anchor-id="cleaning-up-your-do-files">Cleaning up your do-files</h3>
+<p>Writing the do-files that accomplish the tasks outlined above will be a large part of the work you do for this exercise. For most of the tasks, your first attempt at writing a command or commands won’t work—you will get error messages, or something will be obviously incorrect, and you will need to try again, maybe several times, before you figure out syntax that works.</p>
+<p>When you have finally gotten everything in a do-file to run successfully, you may well have accumulated a lot of extra stuff that is no longer relevant: commands that were first tries, false starts, or exploration to figure out how things work.</p>
+<p>At the end of the exercise, when you are preparing the final electronic documentation to submit with your printed report, you should clean up your do-files: remove any first tries, false starts and exploration that turned out to be mistakes or that do not serve any purpose. The only commands left in the do-files you submit with your documentation should be ones that do something necessary to accomplish the required tasks.</p>
+<p>And remember to include comments throughout your do-files explaining the purpose of the commands at each step of the data processing and analysis.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Your do-files of course need to run properly and execute the steps of data processing and analysis that reproduce your results. But they should also be useful documents to a human reader who wants to learn about what you did for this project. Keep that goal in mind as you do your final clean-up of the commands and insert comments.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -673,6 +783,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./data-appendix-do.html" class="pagination-link" aria-label="data-appendix.do">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">data-appendix.do</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./readme.html" class="pagination-link" aria-label="README">
+        <span class="nav-page-text">README</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
