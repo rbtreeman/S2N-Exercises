@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alcohol Project - processing.do</title>
+<title>Reproducibility Exercises - Dataset and codebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./data-appendix-do.html" rel="next">
-<link href="./dofiles.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../alcohol-exercise/dofiles.html" rel="next">
+<link href="../alcohol-exercise/folders.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./processing-do.html">processing.do</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/intro.html">Setup</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/dataset-and-codebook.html">Dataset and codebook</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Alcohol Project</a> 
+      <a href="../">Reproducibility Exercises</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,128 +110,213 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Setup</span></a>
+ <span class="menu-text">Alcohol Exercise</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Animal House in Alcohol-Free Dorms?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Folders.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up the workspace</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Dataset and Codebook.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dataset and Codebook</span></a>
+  <a href="../alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Dataset and codebook</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
  <span class="menu-text">Writing the do files</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dofiles.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./processing-do.html" class="sidebar-item-text sidebar-link active">
+  <a href="../alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">processing.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-appendix-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">data-appendix.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./analysis-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">analysis.do</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">The README File</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">The README file</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./readme.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the README</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">The printed report</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report-appendix.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Appendix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report-figures.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Figures</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Electronic Documentation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Electronic documentation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./e-doc.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Checking your work</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Anscombe’s Quartet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anscombe’s Quartet: No Correlation Without Visualization!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Writing text and code</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instructions and Questions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">Finishing up</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assembling your compendium</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -244,16 +329,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#writing-processing.do" id="toc-writing-processing.do" class="nav-link active" data-scroll-target="#writing-processing.do">writing processing.do</a></li>
+  <li><a href="#download-the-dataset-and-codebook" id="toc-download-the-dataset-and-codebook" class="nav-link active" data-scroll-target="#download-the-dataset-and-codebook">Download the dataset and codebook</a></li>
+  <li><a href="#examine-the-codebook-and-dataset" id="toc-examine-the-codebook-and-dataset" class="nav-link" data-scroll-target="#examine-the-codebook-and-dataset">Examine the codebook and dataset</a></li>
+  <li><a href="#general-comments-about-organizing-your-work-and-writing-do-files" id="toc-general-comments-about-organizing-your-work-and-writing-do-files" class="nav-link" data-scroll-target="#general-comments-about-organizing-your-work-and-writing-do-files">General comments about organizing your work and writing do-files</a>
+  <ul class="collapse">
+  <li><a href="#folder-structure-and-file-locations." id="toc-folder-structure-and-file-locations." class="nav-link" data-scroll-target="#folder-structure-and-file-locations.">Folder structure and file locations.</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="./processing-do.html">processing.do</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/intro.html">Setup</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/dataset-and-codebook.html">Dataset and codebook</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">processing.do</h1>
+<h1 class="title">Dataset and codebook</h1>
 </div>
 
 
@@ -270,7 +360,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>At the beginning of every do-file you write, remember to write a header indicating that the working directory should be set to the Command Files folder when the do-file is executed.</p>
+<p>Download and examine the dataset and codebook you will use for this exercise</p>
+<p>Find and explore the website where the data for this exercise are stored. The data used in this exercise come from a study titled Harvard School of Public Health College Alcohol Study, 2001. This study is archived at the Inter-University Consortium for Political and Social Research (ICPSR); its ICPSR study number is 4291.</p>
+<p>Go to the <a href="www.icpsr.umich.edu">ICPSR website</a> (www.icpsr.umich.edu), and search for this study. When you have found the page for this study, read the information provided there</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -283,50 +375,46 @@ Tip
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Here’s an example of what that header might say: “Stata’s working directory should be set to the Command-Files folder whenever this do-file (or any part of it) is executed. Before running this do-file, check Stata’s working directory; if necessary, change it to the Command-Files folder.”</p>
+<p>Some of the information on the webpage for the dataset may have to do with technical matters you don’t understand or details that may not appear important, but that is OK. Just read through the page and get out of it what you can.</p>
 </div>
 </div>
 </div>
-<section id="writing-processing.do" class="level2">
-<h2 class="anchored" data-anchor-id="writing-processing.do">writing processing.do</h2>
-<p>In <code>processing.do</code>, you should write commands that accomplish the following:</p>
+<section id="download-the-dataset-and-codebook" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-dataset-and-codebook">Download the dataset and codebook</h3>
+<p>Before you can download the data, you need to create an account on the ICPSR website. Once you have done so, log in, go to the main page for the 2001 alcohol study, and click on the “Download” button. You will get a menu of formats to choose from, including SAS, SPSS, Stata, and ASCII. From this menu, select Stata.</p>
+<p>The data file will be downloaded in a zipped folder. When you unzip and look inside the folder, you will see that it contains several documents, as well as a subfolder called <code>/DS0001</code> For this exercise, you will need to use only two of the files you downloaded, both of which will be stored in the <code>/DS0001</code> subfolder:</p>
+<blockquote class="blockquote">
+<p><code>04291-0001-Data.dta</code> This file contains the data from the survey, stored in Stata’s .dta format. This file will be referred to as the “original data file” for this exercise.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><code>04291-0001-Codebook.pdf</code> This is the codebook for the 2001 alcohol survey. It will be referred to as the “metadata” for the original data file.</p>
+</blockquote>
+<p>You should save copies of both of these files in the folder hierarchy you created for this exercise.</p>
+<p>Save the original data file in the <code>/Original-Data</code> folder.</p>
+<p>Save the codebook in the <code>/Metadata</code> folder (which is inside your Original-Data folder).</p>
+</section>
+<section id="examine-the-codebook-and-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="examine-the-codebook-and-dataset">Examine the codebook and dataset</h3>
+<p>Examine the codebook and original data file to familiarize yourself with the information they contain.</p>
+<p>In particular, by reading the codebook and using Stata to explore the contents of the data, answer the following questions:</p>
 <ul>
-<li><p>Open the <code>04291-0001-Data.dta</code> data file.</p></li>
-<li><p>For this exercise, we want to consider only students who live in campus housing or sororities/fraternities. Therefore, drop all cases for which the student’s residence at college is “Off campus house/apt” or “other.” Also, drop all cases for which the variable representing the student’s residence at college has a missing value.</p></li>
-<li><p>Generate a variable called <code>drunk</code>, which is:</p>
-<ul>
-<li>equal to 0 if the student drank enough to get drunk fewer than three times in the last thirty days</li>
-<li>equal to 1 if the student drank enough to get drunk three or more times in the last thirty days</li>
-<li>equal to missing (“.”) if the variable indicating how many times the student drank enough to get drunk in the last thirty days is missing</li>
-</ul></li>
-<li><p>Generate a variable called <code>hsdrunk</code>, which is:</p>
-<ul>
-<li>equal to 0 if the student had five or more drinks in a row on two or fewer occasions during her/his last year of high school</li>
-<li>equal to 1 if the student had five or more drinks in a row on three or more occasions during her/his last year of high school</li>
-<li>equal to missing (“.”) if the variable indicating how many times the student had five or more drinks in a row during her/his last year of high school is missing</li>
-</ul></li>
-<li><p>Generate a variable called <code>free</code>, which is:</p>
-<ul>
-<li>equal to 0 if the student does not live in alcohol-free housing</li>
-<li>equal to 1 if the student lives in alcohol-free housing</li>
-<li>equal to missing (“.”) if the variable indicating whether or not the student lives in alcohol-free housing is missing</li>
-</ul></li>
-<li><p>Generate a variable called <code>volfree</code>, which is:</p>
-<ul>
-<li>equal to 1 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing</li>
-<li>equal to 0 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing</li>
-<li>equal to missing (“.”) in all other cases</li>
-</ul></li>
-<li><p>Generate a variable called <code>housing</code>, which is:</p>
-<ul>
-<li>equal to 1 if free=0 (the student does not live in alcohol-free housing)</li>
-<li>equal to 2 if free=1 (the student lives in alcohol-free housing) and the student was assigned to live in alcohol-free housing</li>
-<li>equal to 3 if free=1 (the student lives in alcohol-free housing) and all on-campus housing is alcohol-free</li>
-<li>equal to 4 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing</li>
-<li>equal to missing (“.”) in all other cases</li>
-</ul></li>
-<li><p>Generate a new variable that is simply an exact copy of G6, and give it the name <code>health</code>.</p></li>
+<li><p>What is the recommended format for citations of this dataset (to use, for example, in a reference list or a list of data sources)?</p></li>
+<li><p>How many observations are there in the dataset?</p></li>
+<li><p>How many variables are there in the dataset?</p></li>
+<li><p>What is the unit of analysis for the dataset?</p></li>
+<li><p>What population was the sample represented in this dataset taken from?</p></li>
 </ul>
+<p>For this exercise, you will need to use six variables from alcohol study. In the original data file, these variables have the names <code>A6, B8, B9, C13, G6,</code> and <code>G11</code>.</p>
+<p>For each of these variables, answer the following questions:</p>
+<ul>
+<li><p>How is the variable defined, or what does it represent?</p></li>
+<li><p>What units is the variable measured in, or what is the coding scheme?</p></li>
+<li><p>Is it categorical or quantitative?</p></li>
+<li><p>If it is quantitative, find the mean, standard deviation, the three quartiles, the minimum and the maximum.</p></li>
+<li><p>It if is categorical, how many categories are there, what do they represent, and what proportion of the observations fall in each category?</p></li>
+<li><p>For each categorical variable, decide whether the categories are ordered or unordered</p></li>
+</ul>
+<p>Finally, suppose you wanted know what college or university each student in the sample attended. Would you be able to find that out using the codebook and dataset you downloaded from ICPSR? If so, how would you do so? If not, do you have any idea why that information is not provided?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -339,58 +427,20 @@ Tip
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>You will not use the variable health in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.</p>
+<p>You will not need to turn in written answers to these questions, and you will not need to turn in do-files that document this preliminary exploration of your data. However, it is important to convince yourself that you understand all of the questions well. If you are hazy on any of them, you are likely to encounter trouble as you work on the parts of the exercise that you do have to turn in.</p>
 </div>
 </div>
 </div>
-<ul>
-<li>Drop all variables other than the six that were just created</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>It will be easier to do this using Stata’s keep command than Stata’s drop command.</p>
-</div>
-</div>
-</div>
-<ul>
-<li>Assign appropriate labels to each of the six variables.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The variable names you defined when you created the variables (drunk, hsdrunk, etc.) are the ones you will use when you write commands for Stata. The labels you apply to the variables are the ones that will appear in figures and tables that Stata produces. Choose short but descriptive labels. For example, an appropriate label for health would be “Health Rating”.</p>
-</div>
-</div>
-</div>
-<ul>
-<li><p>Assign appropriate labels to the values of each of the six variables. For example, based on information given for the variable G6 in the original data file, appropriate value labels for the variable health would be “Excellent” for the value 1, and “Very Good” for 2, “Good” for 3, “Fair” for 4, and “Poor” for 5.</p></li>
-<li><p>Drop all cases for which the value of <code>drunk</code> is missing.</p></li>
-<li><p>Drop all cases for which the value of <code>hsdrunk</code> is missing.</p></li>
-<li><p>Drop all cases for which the value of <code>housing</code> is missing.</p></li>
-<li><p>Save the new data file you have created. This will be your analysis data file—i.e., the fully processed data that you will use to generate the bar graphs for this exercise. Give this analysis data file the name <code>analysis.dta</code>, and save it in your Analysis-Data folder. (Use a relative directory path to specify the location of the Analysis-Data folder.)</p></li>
-</ul>
-<p>Remember to save <code>processing.do</code> in your Command-Files folder.</p>
+</section>
+<section id="general-comments-about-organizing-your-work-and-writing-do-files" class="level2">
+<h2 class="anchored" data-anchor-id="general-comments-about-organizing-your-work-and-writing-do-files">General comments about organizing your work and writing do-files</h2>
+<section id="folder-structure-and-file-locations." class="level3">
+<h3 class="anchored" data-anchor-id="folder-structure-and-file-locations.">Folder structure and file locations.</h3>
+<p>Before you begin working on your do-files, make sure that you have created a folder hierarchy as described <a href="https://connor1883.github.io/quarto-demo/Alcohol%20Exercise.html#create-a-set-of-folders-to-store-your-work-in">here</a>, and that you have put the original data and the codebook in the folders specified <a href="https://connor1883.github.io/quarto-demo/Alcohol%20Exercise.html#dataset-and-codebook">here</a>. As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.</p>
+<p>Whenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -805,13 +855,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dofiles.html" class="pagination-link" aria-label="Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
+      <a href="../alcohol-exercise/folders.html" class="pagination-link" aria-label="Setting up the workspace">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Setting up the workspace</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./data-appendix-do.html" class="pagination-link" aria-label="data-appendix.do">
-        <span class="nav-page-text">data-appendix.do</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../alcohol-exercise/dofiles.html" class="pagination-link" aria-label="Overview">
+        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

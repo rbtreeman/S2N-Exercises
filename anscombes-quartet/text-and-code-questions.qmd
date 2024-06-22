@@ -1,0 +1,86 @@
+---
+title: Instructions and Questions
+---
+- Write a code chunk that: 
+  - Loads the `readr` package.  
+  - Loads the data file `anscombe.csv`, and gives the name anscombe to the data frame.
+  - Prints the anscombe data frame. ***Check to be sure that the data printed matches the data listed above in Section 1 of this exercise.***
+  <!--# update this reference -->
+- Next write text and code chunks to answer the following questions.  
+
+### Question 1
+Compute the means and standard deviations of all eight variables in the dataset.  Use R's `round()` function to round off the answers to show no more than two digits beyond the decimal point.
+
+How do the means and standard deviations of the X variables compare to one another?  How do the means and standard deviations of the Y variables compare to one another?
+
+### Question 2
+
+Compute the correlations between the X and Y variables in each of the four pairs, (X1, Y1), (X2, Y2), (X3, Y3), and (X4, Y4). 
+
+Again, use R's `round()` function to round off the answers to show no more than two digits beyond the decimal point.) point.
+
+How do the correlations for the four pairs of variables compare to one another? 
+
+### Question 3
+
+For each of the four pairs of X and Y variables, compute an ordinary least squares regression, treating the Y variable as the dependent variable and the X variable as the independent variable.  Print the estimated intercept and slope from each regression using R's  `coefficients()` function, specifying the option `display=2` to round off the values of the coefficients.
+
+:::{.callout-tip collapse="false"}
+Here is R code that will run the regression and display the coefficients as required for the (X1, Y1) regression:
+```
+print("Regression of X1 on Y1: Intercept and Slope")
+fit1<-lm(anscombe$Y1~anscombe$X1)
+print(coefficients(fit1), display=2)
+ ```
+Modify this code to compute the regressions with the three other pairs of variables.
+:::
+
+How do the estimated coefficients from the four regressions compare to one another?
+
+### Question 4
+
+Given what you observed in Questions 1, 2, and 3, would you be justified in drawing the following conclusion?  Explain why or why not.
+
+*"The association between the X and Y variables is similar for all four pairs."*
+
+### Question 5
+
+Now let's supplement the numerical analysis we have done with a very simple visualization.  Create four scatterplots, one for each of the four pairs of variables, letting the horizontal axis represent the value of the X variable and the vertical axis represent the value of the Y variable.
+
+:::{.callout-tip collapse="false"}
+Generate these scatterplots by using the `plot()` function four times, once for  each pair of variables.  
+
+To display the four scatterplots as panels in a single frame, type the following line immediately before the four `plot()` functions:
+
+`par(mfrow = c(2, 2))`
+:::
+
+### Question 6
+
+Using only correlations and regressions to evaluate the nature of the associations between the X and Y variables failed to reveal some important information that was evident in the scatterplots.  Perhaps it would have been useful to look at some additional numerical descriptive statistics—rather than just correlations and regressions.  So let's see what we might learn by looking at some additional numerical statistics.  And in addition to looking at some additional statistics, let's not round off to just two digits beyond the decimal place.
+
+In particular, for every X variable and every Y variable, find the mean, standard deviation, mean absolute deviation, 25th percentile, median, and 75th percentile.  Use R's `round()` function to allow up to 5 digits beyond the decimal point. 
+
+:::{.callout-tip collapse="false"}
+Generating the mean absolute deviation for each variable requires using the `MeanAD` option inside R's `apply()` function:
+
+`apply(anscombe, 2, MAD)`
+
+When you add the `round()` function to allow up to 5 digits beyond the decimal point, the expression looks like this:
+
+`round(apply(anscombe, 2, MAD),5)`
+
+Note also that the `MeanAD` option requires the `DescTools` package, so the code chunk you write for this problem should begin with
+
+`library(DescTools)`
+:::
+
+What do you learn from these more detailed descriptive statistics that you could not learn from just the means and standard deviations you computed for question 1?
+
+### Question 7
+
+This exercise is intended to teach some cautionary lessons about some pitfalls you might encounter when you are trying to get an understanding of the distributions of several variables or investigating the nature of the bivariate associations among the variables.  Write a paragraph or two summarizing what you believe are the most important of these lessons.
+
+---
+
+When you have finished writing all the code chunks and text described above in `YourNameReport.Rmd`, be sure to save the file.  Then knit `YourNameReport.Rmd` to generate your report for this exercise.  Because of the output options specified in the header at the beginning of Report.Rmd, knitting the source file will generate the report in both .pdf (`YourNameReport.pdf`) and .html format (`YourNameReport.html`.)  Both versions of the report will be saved in the top level of the the AnscombeExercise R project. 

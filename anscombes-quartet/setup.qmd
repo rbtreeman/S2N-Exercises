@@ -1,0 +1,37 @@
+---
+title: Getting Started
+---
+
+-   Download the folder `AnscombeSetup.zip` to the computer you will be using for this exercise.
+
+-   Unzip the folder.
+
+-   Change the name of the unzipped folder to `./YourNameAnscombeExercise`, where "Your Name" is replaced by your name (e.g., `./ChrisNguyenAnscombeExercise`).
+
+-   Open `./YourNameAnscombeExercise`. It will contain three files:
+
+    -   `AnscombeExercise.Rproj`
+
+    -   `ReportTemplate.Rmd`. This is the source file in which you will type the text and code chunks that generate the report you write for this exercise.
+
+    -   `Setup.R`. This is an R script that is called when you knit the source file. You should not modify this script.
+
+-   Double-click on `AnscombeExercise.Rproj`. That will launch RStudio.
+
+-   R's working directory will be set to the `./YourNameAnscombeExercise folder`.
+
+-   The three files stored in `./YourNameAnscombeExercise` will be displayed in RStudio's "Files" window.
+
+-   Change the name of the file `ReportTemplate.Rmd` to `YourNameReport.Rmd` (e.g., `ChrisNguyenReport.Rmd.`)
+
+-   Open `YourNameReport.Rmd` by clicking on it in R Studio's Files window. You will see that it already contains some text and code:
+
+    - [A header]{.underline}. Insert a title, your name, and the date in the header.
+
+    - [A code chunk that sets global options]{.underline}. Read the comment the precedes that code chunk, and examine the code so that you understand what it does.
+
+    - [A code chunk that calls the `Setup.R` R script]{.underline}. Running `Setup.R` accomplishes several things:
+
+      -   It installs two R packages required for this exercise: `readr` and `DescTools`.
+      -   Creates a new directory called Data (in the top level of the AnscombeExercise R project).
+      -   Downloads the data file used for this exercise (`anscombe.csv`), and saves it in the new Data directory.

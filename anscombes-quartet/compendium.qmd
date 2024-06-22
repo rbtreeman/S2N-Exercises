@@ -1,0 +1,43 @@
+---
+title: Assembling your compendium
+---
+Assembling your compendium for this exercise is just a matter of cleaning up and organizing the contents of your `./YourNameAnscombeExercise` folder.
+
+**First,** polish up your source file `YourNameReport.Rmd`.  
+
+- Delete any vestiges of code or text you wrote that didn't pan out or that is not needed to produce your report, so that you have streamlined source file that produces the output required for the report in a clear and direct way.  Any code or text that you experimented with but that does not serve a purpose in generating the report should be removed.
+
+- Be sure that you have inserted comments generously throughout YourNameReport.Rmd to explain what the code you have written is doing at every step of the exercise.
+
+**Second,** be sure that your `./YourNameAnscombeExercise` folder contains the following items:
+
+- Five files:
+  - `AnscombeExercise.Rproj`.  This file was in the folder when you began this exercise; you should not have modified it.
+  -	`YourNameReport.Rmd`.  This is the source file in which you typed the text and code chunks as described in the instructions above.
+  -	`Setup.R`.  This file was in the folder when you began this exercise; you should not have modified it.
+  -	`YourNameReport.html`.  This is the report in .html format.
+  -	`YourNameReport.pdf`.  This is the report in .pdf format.
+-	One subfolder:
+    -	The subfolder should be called `/Data`, and it should contain a file called `anscombe.csv`.  The Data folder is created, and `anscombe.csv` is downloaded and saved in it, by the R script `Setup.R`.  (`Setup.R` runs when you knit `YourNameReport.Rmd`: there is an R chunk in the source file that calls `Setup.R`.)
+
+If there are any files in `./YourNameAnscombeExercise` other than those listed above, you should delete them.  In particular:
+  
+  - If `ReportTemplate.Rmd` is still the folder, you should remove it.
+  -	It is possible that some additional files are created when you knit `Report.Rmd`.  If so, you should remove them.
+
+Similarly, if there are any files in the Data subfolder other than `Anscombe.csv`, you should delete them.
+
+Your `./YourNameAnscombeProject` folder, containing the items listed above (and nothing else) is your compendium for this exercise.
+
+**The completed project should look like this:**
+
+```
+./YourNameAnscombeProject
+├── YourNameReport.Rmd
+├── AnscombeExercise.Rproj
+├── Setup.R
+├── YourNameReport.html
+├── YourNameReport.pdf
+└── Data
+    └── anscombe.csv
+```

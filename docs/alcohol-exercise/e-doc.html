@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reproducibility Exercises - Project TIER Reproducibility Exercises</title>
+<title>Reproducibility Exercises - Checking your work</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../anscombes-quartet/intro.html" rel="next">
+<link href="../alcohol-exercise/report-figures.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,88 +68,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(placeholder.png);
-background-size: cover;
-      }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Reproducibility Exercises
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/e-doc.html">Electronic documentation</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/e-doc.html">Checking your work</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -159,34 +92,12 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Project TIER Reproducibility Exercises</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      <div>
-      <div class="quarto-title-meta-heading">Modified</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 22, 2024</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Reproducibility Exercises</a> 
+      <a href="../">Reproducibility Exercises</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -216,19 +127,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Animal House in Alcohol-Free Dorms?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up the workspace</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dataset and codebook</span></a>
   </div>
 </li>
@@ -245,25 +156,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">processing.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">data-appendix.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">analysis.do</span></a>
   </div>
 </li>
@@ -280,7 +191,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the README</span></a>
   </div>
 </li>
@@ -297,19 +208,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Appendix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Figures</span></a>
   </div>
 </li>
@@ -317,16 +228,16 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
  <span class="menu-text">Electronic documentation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Checking your work</span></a>
   </div>
 </li>
@@ -354,13 +265,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Anscombe’s Quartet: No Correlation Without Visualization!</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
@@ -377,13 +288,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instructions and Questions</span></a>
   </div>
 </li>
@@ -400,7 +311,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assembling your compendium</span></a>
   </div>
 </li>
@@ -414,77 +325,96 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dont-leave-any-junk-lying-around-in-these-folders." id="toc-dont-leave-any-junk-lying-around-in-these-folders." class="nav-link active" data-scroll-target="#dont-leave-any-junk-lying-around-in-these-folders.">Don’t leave any junk lying around in these folders.</a></li>
+  <li><a href="#test-your-electronic-files-to-make-sure-they-run." id="toc-test-your-electronic-files-to-make-sure-they-run." class="nav-link" data-scroll-target="#test-your-electronic-files-to-make-sure-they-run.">Test your electronic files to make sure they run.</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/e-doc.html">Electronic documentation</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/e-doc.html">Checking your work</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Checking your work</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>This website is being developed to host reproducibility exercises</p>
+</header>
 
 
+<p>When you have completed the exercise, you should be sure that clean, final versions of all the electronic documents you created are stored in the appropriate locations in the folder hierarchy you created for this exercise.</p>
+<p>Here is a map of which documents should be in which folders:</p>
+<pre><code>./Your-Name-Alcohol-Exercise
+├── readme.pdf
+├── report.pdf
+├── Original-Data
+│     ├── 04291-0001-Data.dta
+|     └── Metadata
+|         └── 04291-0001-Codebook.pdf
+├── Command-Files
+|   └── Analysis-Data
+|       └── analysis.dta
+└── Graphs
+    ├── For-Data-Appendix
+    |   ├── drunk-dist.gph
+    |   ├── free-dist.gph
+    |   ├── volfree-dist.gph
+    |   ├── housing-dist.gph
+    |   └── hsdrunk-dist.gph
+    └── For-Report
+        ├── figure1.gph
+        ├── figure2.gph
+        ├── figure3.gph
+        ├── figure4.gph
+        ├── figure5.gph
+        └── figure6.gph
+</code></pre>
+<section id="dont-leave-any-junk-lying-around-in-these-folders." class="level3">
+<h3 class="anchored" data-anchor-id="dont-leave-any-junk-lying-around-in-these-folders.">Don’t leave any junk lying around in these folders.</h3>
+<p>Make sure your folders don’t include any sub-folders other than the ones shown above. Make sure your folders don’t contain any files other than the ones shown above.</p>
+</section>
+<section id="test-your-electronic-files-to-make-sure-they-run." class="level3">
+<h3 class="anchored" data-anchor-id="test-your-electronic-files-to-make-sure-they-run.">Test your electronic files to make sure they run.</h3>
+<p>Find a computer that is not one you have been using while working on this exercise. Copy your entire project folder <code>./Your-Name-Alcohol-Exercise</code>, with all its contents, onto that computer. Then be sure that you can complete the following steps without needing to move around any of the folders or files:</p>
+<ul>
+<li>Launch Stata.</li>
+<li>Set the working directory to your Command-Files folder.</li>
+<li>Run the <code>processing.do</code> do-file. After you run this file, check to be sure that the <code>analysis.dta</code> data file that you had stored in your Analysis-Data folder was overwritten by a new copy that was created when you ran this do-file. (You can check that by looking at the “date modified” information for the file.)</li>
+<li>Run the <code>data-appendix.do</code> do-file. Verify that running this do-file generates the desired output. Also check to be sure that the graphs that were stored in the For-Data-Appendix subfolder of the Graphs folder were overwritten by new versions that were generated when you ran this do-file.</li>
+</ul>
+<p>Run the <code>analysis.do</code> do-file. After you run this file, check to be sure that the six graph files that were stored in the <code>/For-Report</code> subfolder of the Graphs folder were overwritten by new copies.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you encounter any hitches, do not submit your documentation for this exercise until you have figured out what the problems are and resolved them.</p>
+</div>
+</div>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1543899600000" data-listing-file-modified-sort="1719061204010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
-<div class="thumbnail">
-<p><a href="./alcohol-exercise/intro.html" class="no-external"></a></p><a href="./alcohol-exercise/intro.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alcohol-exercise/intro.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alcohol-exercise/intro.html" class="no-external">Animal House in Alcohol-Free Dorms?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alcohol-exercise/intro.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./alcohol-exercise/intro.html" class="no-external">In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./alcohol-exercise/intro.html" class="no-external">
-<div class="listing-date">
-Dec 4, 2018
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1579842000000" data-listing-file-modified-sort="1719062301849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="694">
-<div class="thumbnail">
-<p><a href="./anscombes-quartet/intro.html" class="no-external"></a></p><a href="./anscombes-quartet/intro.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./anscombes-quartet/intro.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./anscombes-quartet/intro.html" class="no-external">Anscombe’s Quartet: No Correlation Without Visualization!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./anscombes-quartet/intro.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./anscombes-quartet/intro.html" class="no-external">This exercise teaches some cautionary lessons about using correlation and regression to characterize the nature of the association between two variables.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./anscombes-quartet/intro.html" class="no-external">
-<div class="listing-date">
-Jan 24, 2020
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -894,6 +824,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../alcohol-exercise/report-figures.html" class="pagination-link" aria-label="Figures">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Figures</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../anscombes-quartet/intro.html" class="pagination-link" aria-label="Anscombe's Quartet: No Correlation Without Visualization!">
+        <span class="nav-page-text">Anscombe’s Quartet: No Correlation Without Visualization!</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

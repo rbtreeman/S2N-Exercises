@@ -1,11 +1,11 @@
 ---
-title: "Project TIER Reproducibility Exercise:                                                         Animal House in Alcohol-Free Dorms?"
+title: "Project TIER Reproducibility Exercises"
 title-block-banner: placeholder.png
-date: 2018-12-04
-date-modified: 06-21-2024
+date-modified: 06-22-2024
+listing:
+  contents:
+    # pulls the intro.qmd file from any projects
+    - "intro.qmd"
+  type: default
 ---
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>
-
-The Alcohol Project is also hosted on this website
+This website is being developed to host reproducibility exercises

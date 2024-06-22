@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alcohol Project - Writing the README</title>
+<title>Reproducibility Exercises - Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./report.html" rel="next">
-<link href="./analysis-do.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../alcohol-exercise/processing-do.html" rel="next">
+<link href="../alcohol-exercise/dataset-and-codebook.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./readme.html">The README File</a></li><li class="breadcrumb-item"><a href="./readme.html">Writing the README</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/dofiles.html">Overview</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Alcohol Project</a> 
+      <a href="../">Reproducibility Exercises</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,128 +110,213 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Setup</span></a>
+ <span class="menu-text">Alcohol Exercise</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Animal House in Alcohol-Free Dorms?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Folders.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up the workspace</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Dataset and Codebook.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dataset and Codebook</span></a>
+  <a href="../alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dataset and codebook</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Writing the do files</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dofiles.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./processing-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">processing.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-appendix-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">data-appendix.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./analysis-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">analysis.do</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">The README File</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">The README file</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./readme.html" class="sidebar-item-text sidebar-link active">
+  <a href="../alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the README</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">The printed report</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report-appendix.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Appendix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report-figures.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Figures</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Electronic Documentation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Electronic documentation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./e-doc.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Checking your work</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Anscombe’s Quartet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anscombe’s Quartet: No Correlation Without Visualization!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Writing text and code</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instructions and Questions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">Finishing up</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assembling your compendium</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -244,16 +329,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#formatting-the-read-me-file" id="toc-formatting-the-read-me-file" class="nav-link active" data-scroll-target="#formatting-the-read-me-file">Formatting the Read Me file</a></li>
+  <li><a href="#processing.do" id="toc-processing.do" class="nav-link active" data-scroll-target="#processing.do"><code>processing.do</code></a></li>
+  <li><a href="#data-appendix.do" id="toc-data-appendix.do" class="nav-link" data-scroll-target="#data-appendix.do"><code>data-appendix.do</code></a></li>
+  <li><a href="#results.do" id="toc-results.do" class="nav-link" data-scroll-target="#results.do"><code>results.do</code></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./readme.html">The README File</a></li><li class="breadcrumb-item"><a href="./readme.html">Writing the README</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alcohol Exercise</li><li class="breadcrumb-item"><a href="../alcohol-exercise/dofiles.html">Writing the do files</a></li><li class="breadcrumb-item"><a href="../alcohol-exercise/dofiles.html">Overview</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Writing the README</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -270,23 +357,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Read Me file is a document that provides information about the electronic files you have assembled to document your work for this exercise.</p>
-<p>It should consist of two main sections.</p>
-<ul>
-<li><p>The first section should provide an outline or map of all the files included in the replication documentation, and the folders and sub-folders in which they are stored.</p></li>
-<li><p>The second section should give step-by-step instructions explaining how to use your documentation to:</p>
-<ol type="1">
-<li>Replicate all the data processing required to transform the original data into your analysis data file</li>
-<li>Generate all the computer output that you used in the Data Appendix</li>
-<li>Reproduce the six bar graphs you created.</li>
-</ol></li>
-</ul>
-<p>Those instructions should be written in plain English, and they should be clear and detailed enough that someone unfamiliar with this exercise would actually be able to follow them and replicate everything you did with your data.</p>
-<section id="formatting-the-read-me-file" class="level2">
-<h2 class="anchored" data-anchor-id="formatting-the-read-me-file">Formatting the Read Me file</h2>
-<p>The title “Read Me File for XXX” (where you substitute an informative title for XXX) should appear at the top of the document.</p>
-<p>The name(s) of the authors(s) of the exercise and the date it was turned in should also be shown at the top of the Read Me file. The pages of the Read Me file should be numbered.</p>
-<p>When the Read Me file is complete, you should save a copy of it in pdf format. Give the file the name read-me.pdf. A copy of read-me.pdf should be stored in the top level of your main project folder <code>./Your-Name-Alcohol-Exercise</code>.</p>
+<p>For this exercise you will write three do files:</p>
+<section id="processing.do" class="level3">
+<h3 class="anchored" data-anchor-id="processing.do"><code>processing.do</code></h3>
+<p>In most studies involving statistical data (including this exercise), the original data must be processed before they are ready to be analyzed. For example, this processing may include correcting or removing errors in the original data, dropping variables or observations, generating new variables, and (when your original data are stored in more than one file) combining data files.</p>
+<p>Data on which all the processing necessary to prepare them for analysis has been completed are referred to as “analysis data.” These are the data that will be used to generate the results that are presented in the final report on the study. The processing.do do-file you write for this exercise will contain commands that open up the original data file <code>04291-0001-Data.dta</code>, process the data as necessary to create your analysis data file, and then save the analysis data in a file named analysis.dta.</p>
+</section>
+<section id="data-appendix.do" class="level3">
+<h3 class="anchored" data-anchor-id="data-appendix.do"><code>data-appendix.do</code></h3>
+<p>The Data Appendix is a document that serves as a codebook or user’s guide for your analysis data. It contains variable definitions, coding and summary statistics (numeric and graphical) for all the variables in your analysis data. The <code>data-appendix.do</code> do-file will contain commands that open up your analysis data file <code>analysis.dta</code>and then generate the summary statistics and other information that you will include in the Data Appendix.</p>
+</section>
+<section id="results.do" class="level3">
+<h3 class="anchored" data-anchor-id="results.do"><code>results.do</code></h3>
+<p>Figures, tables and other information presented in a report about a study that were generated by computations performed on statistical data are referred to as “results.”</p>
+<p>For this exercise, the results consist of six bar graphs. The <code>results.do</code> do-file will contain commands that open up <code>analysis.dta</code>, and then generate those graphs, saving each graph when it is created.</p>
 
 
 </section>
@@ -703,13 +787,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./analysis-do.html" class="pagination-link" aria-label="analysis.do">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">analysis.do</span>
+      <a href="../alcohol-exercise/dataset-and-codebook.html" class="pagination-link" aria-label="Dataset and codebook">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dataset and codebook</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./report.html" class="pagination-link" aria-label="Writing the report">
-        <span class="nav-page-text">Writing the report</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../alcohol-exercise/processing-do.html" class="pagination-link" aria-label="processing.do">
+        <span class="nav-page-text">processing.do</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

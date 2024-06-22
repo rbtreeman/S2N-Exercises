@@ -4,33 +4,58 @@ project:
 
 website:
   page-navigation: true
-  title: "Alcohol Project"
+  title: "Reproducibility Exercises"
   sidebar:
     style: "docked"
     search: true
     contents:
-      - section: "Setup"
+      
+          ###########
+          # ALCOHOL #
+          ###########
+
+      - section: "Alcohol Exercise"
         contents:
-          - Intro.qmd
-          - Folders.qmd
-          - Dataset and Codebook.qmd
-      - section: "Writing the do files"
-        contents:
-          - dofiles.qmd
-          - processing-do.qmd
-          - data-appendix-do.qmd
-          - analysis-do.qmd
-      - section: "The README File"
-        contents:
-          - readme.qmd
-      - section: "The printed report"
-        contents:
-          - report.qmd
-          - report-appendix.qmd
-          - report-figures.qmd
-      - section: "Electronic Documentation"
+        - section: "Setup"
+          contents:
+            - alcohol-exercise/intro.qmd
+            - alcohol-exercise/folders.qmd
+            - alcohol-exercise/dataset-and-codebook.qmd
+        - section: "Writing the do files"
+          contents:
+            - alcohol-exercise/dofiles.qmd
+            - alcohol-exercise/processing-do.qmd
+            - alcohol-exercise/data-appendix-do.qmd
+            - alcohol-exercise/analysis-do.qmd
+        - section: "The README file"
+          contents:
+            - alcohol-exercise/readme.qmd
+        - section: "The printed report"
+          contents:
+            - alcohol-exercise/report.qmd
+            - alcohol-exercise/report-appendix.qmd
+            - alcohol-exercise/report-figures.qmd
+        - section: "Electronic documentation"
+          contents: 
+            - alcohol-exercise/e-doc.qmd
+
+            ############
+            # ANSCOMBE #
+            ############
+
+      - section: "Anscombe's Quartet"
         contents: 
-          - e-doc.qmd
+        - section: "Setup"
+          contents:
+            - anscombes-quartet/intro.qmd
+            - anscombes-quartet/setup.qmd
+        - section: "Writing text and code"
+          contents:
+            - anscombes-quartet/text-and-code-overview.qmd
+            - anscombes-quartet/text-and-code-questions.qmd
+        - section: "Finishing up"
+          contents:
+            - anscombes-quartet/compendium.qmd
 format:
   html:
     grid:

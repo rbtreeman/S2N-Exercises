@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reproducibility Exercises - Project TIER Reproducibility Exercises</title>
+<title>Reproducibility Exercises - Instructions and Questions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../anscombes-quartet/compendium.html" rel="next">
+<link href="../anscombes-quartet/text-and-code-overview.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,88 +68,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(placeholder.png);
-background-size: cover;
-      }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Reproducibility Exercises
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Anscombe’s Quartet</li><li class="breadcrumb-item"><a href="../anscombes-quartet/text-and-code-overview.html">Writing text and code</a></li><li class="breadcrumb-item"><a href="../anscombes-quartet/text-and-code-questions.html">Instructions and Questions</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -159,34 +92,12 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Project TIER Reproducibility Exercises</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      <div>
-      <div class="quarto-title-meta-heading">Modified</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 22, 2024</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Reproducibility Exercises</a> 
+      <a href="../">Reproducibility Exercises</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -216,20 +127,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Animal House in Alcohol-Free Dorms?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/folders.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up the workspace</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dataset and codebook</span></a>
+  <a href="../alcohol-exercise/dataset-and-codebook.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dataset and Codebook</span></a>
   </div>
 </li>
       </ul>
@@ -245,25 +156,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/dofiles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/processing-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">processing.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/data-appendix-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">data-appendix.do</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/analysis-do.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">analysis.do</span></a>
   </div>
 </li>
@@ -280,7 +191,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/readme.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the README</span></a>
   </div>
 </li>
@@ -297,19 +208,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing the report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-appendix.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Appendix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/report-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Figures</span></a>
   </div>
 </li>
@@ -326,7 +237,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link">
+  <a href="../alcohol-exercise/e-doc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Checking your work</span></a>
   </div>
 </li>
@@ -354,13 +265,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Anscombe’s Quartet: No Correlation Without Visualization!</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
@@ -368,22 +279,22 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">
  <span class="menu-text">Writing text and code</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/text-and-code-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/text-and-code-questions.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Instructions and Questions</span></a>
   </div>
 </li>
@@ -400,7 +311,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
+  <a href="../anscombes-quartet/compendium.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assembling your compendium</span></a>
   </div>
 </li>
@@ -414,77 +325,152 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#question-1" id="toc-question-1" class="nav-link active" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4</a></li>
+  <li><a href="#question-5" id="toc-question-5" class="nav-link" data-scroll-target="#question-5">Question 5</a></li>
+  <li><a href="#question-6" id="toc-question-6" class="nav-link" data-scroll-target="#question-6">Question 6</a></li>
+  <li><a href="#question-7" id="toc-question-7" class="nav-link" data-scroll-target="#question-7">Question 7</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Anscombe’s Quartet</li><li class="breadcrumb-item"><a href="../anscombes-quartet/text-and-code-overview.html">Writing text and code</a></li><li class="breadcrumb-item"><a href="../anscombes-quartet/text-and-code-questions.html">Instructions and Questions</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Instructions and Questions</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>This website is being developed to host reproducibility exercises</p>
+</header>
 
 
+<ul>
+<li>Write a code chunk that:
+<ul>
+<li>Loads the <code>readr</code> package.<br>
+</li>
+<li>Loads the data file <code>anscombe.csv</code>, and gives the name anscombe to the data frame.</li>
+<li>Prints the anscombe data frame. <strong><em>Check to be sure that the data printed matches the data listed above in Section 1 of this exercise.</em></strong> <!--# update this reference --></li>
+</ul></li>
+<li>Next write text and code chunks to answer the following questions.</li>
+</ul>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>Compute the means and standard deviations of all eight variables in the dataset. Use R’s <code>round()</code> function to round off the answers to show no more than two digits beyond the decimal point.</p>
+<p>How do the means and standard deviations of the X variables compare to one another? How do the means and standard deviations of the Y variables compare to one another?</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>Compute the correlations between the X and Y variables in each of the four pairs, (X1, Y1), (X2, Y2), (X3, Y3), and (X4, Y4).</p>
+<p>Again, use R’s <code>round()</code> function to round off the answers to show no more than two digits beyond the decimal point.) point.</p>
+<p>How do the correlations for the four pairs of variables compare to one another?</p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>For each of the four pairs of X and Y variables, compute an ordinary least squares regression, treating the Y variable as the dependent variable and the X variable as the independent variable. Print the estimated intercept and slope from each regression using R’s <code>coefficients()</code> function, specifying the option <code>display=2</code> to round off the values of the coefficients.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Here is R code that will run the regression and display the coefficients as required for the (X1, Y1) regression:</p>
+<pre><code>print("Regression of X1 on Y1: Intercept and Slope")
+fit1&lt;-lm(anscombe$Y1~anscombe$X1)
+print(coefficients(fit1), display=2)</code></pre>
+<p>Modify this code to compute the regressions with the three other pairs of variables.</p>
+</div>
+</div>
+</div>
+<p>How do the estimated coefficients from the four regressions compare to one another?</p>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>Given what you observed in Questions 1, 2, and 3, would you be justified in drawing the following conclusion? Explain why or why not.</p>
+<p><em>“The association between the X and Y variables is similar for all four pairs.”</em></p>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p>Now let’s supplement the numerical analysis we have done with a very simple visualization. Create four scatterplots, one for each of the four pairs of variables, letting the horizontal axis represent the value of the X variable and the vertical axis represent the value of the Y variable.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Generate these scatterplots by using the <code>plot()</code> function four times, once for each pair of variables.</p>
+<p>To display the four scatterplots as panels in a single frame, type the following line immediately before the four <code>plot()</code> functions:</p>
+<p><code>par(mfrow = c(2, 2))</code></p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<p>Using only correlations and regressions to evaluate the nature of the associations between the X and Y variables failed to reveal some important information that was evident in the scatterplots. Perhaps it would have been useful to look at some additional numerical descriptive statistics—rather than just correlations and regressions. So let’s see what we might learn by looking at some additional numerical statistics. And in addition to looking at some additional statistics, let’s not round off to just two digits beyond the decimal place.</p>
+<p>In particular, for every X variable and every Y variable, find the mean, standard deviation, mean absolute deviation, 25th percentile, median, and 75th percentile. Use R’s <code>round()</code> function to allow up to 5 digits beyond the decimal point.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Generating the mean absolute deviation for each variable requires using the <code>MeanAD</code> option inside R’s <code>apply()</code> function:</p>
+<p><code>apply(anscombe, 2, MAD)</code></p>
+<p>When you add the <code>round()</code> function to allow up to 5 digits beyond the decimal point, the expression looks like this:</p>
+<p><code>round(apply(anscombe, 2, MAD),5)</code></p>
+<p>Note also that the <code>MeanAD</code> option requires the <code>DescTools</code> package, so the code chunk you write for this problem should begin with</p>
+<p><code>library(DescTools)</code></p>
+</div>
+</div>
+</div>
+<p>What do you learn from these more detailed descriptive statistics that you could not learn from just the means and standard deviations you computed for question 1?</p>
+</section>
+<section id="question-7" class="level3">
+<h3 class="anchored" data-anchor-id="question-7">Question 7</h3>
+<p>This exercise is intended to teach some cautionary lessons about some pitfalls you might encounter when you are trying to get an understanding of the distributions of several variables or investigating the nature of the bivariate associations among the variables. Write a paragraph or two summarizing what you believe are the most important of these lessons.</p>
+<hr>
+<p>When you have finished writing all the code chunks and text described above in <code>YourNameReport.Rmd</code>, be sure to save the file. Then knit <code>YourNameReport.Rmd</code> to generate your report for this exercise. Because of the output options specified in the header at the beginning of Report.Rmd, knitting the source file will generate the report in both .pdf (<code>YourNameReport.pdf</code>) and .html format (<code>YourNameReport.html</code>.) Both versions of the report will be saved in the top level of the the AnscombeExercise R project.</p>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1543899600000" data-listing-file-modified-sort="1719061204010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
-<div class="thumbnail">
-<p><a href="./alcohol-exercise/intro.html" class="no-external"></a></p><a href="./alcohol-exercise/intro.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alcohol-exercise/intro.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alcohol-exercise/intro.html" class="no-external">Animal House in Alcohol-Free Dorms?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alcohol-exercise/intro.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./alcohol-exercise/intro.html" class="no-external">In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./alcohol-exercise/intro.html" class="no-external">
-<div class="listing-date">
-Dec 4, 2018
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1579842000000" data-listing-file-modified-sort="1719062301849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="694">
-<div class="thumbnail">
-<p><a href="./anscombes-quartet/intro.html" class="no-external"></a></p><a href="./anscombes-quartet/intro.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./anscombes-quartet/intro.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./anscombes-quartet/intro.html" class="no-external">Anscombe’s Quartet: No Correlation Without Visualization!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./anscombes-quartet/intro.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./anscombes-quartet/intro.html" class="no-external">This exercise teaches some cautionary lessons about using correlation and regression to characterize the nature of the association between two variables.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./anscombes-quartet/intro.html" class="no-external">
-<div class="listing-date">
-Jan 24, 2020
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -894,6 +880,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../anscombes-quartet/text-and-code-overview.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../anscombes-quartet/compendium.html" class="pagination-link" aria-label="Assembling your compendium">
+        <span class="nav-page-text">Assembling your compendium</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
