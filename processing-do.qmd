@@ -48,7 +48,7 @@ In `processing.do`, you should write commands that accomplish the following:
 - Generate a new variable that is simply an exact copy of G6, and give it the name `health`. 
 
 ::: {.callout-tip collapse="true"}
-You will not use the variable health in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.
+You will not use the variable `health` in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.
 :::
 
 - Drop all variables other than the six that were just created
