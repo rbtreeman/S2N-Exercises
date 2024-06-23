@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Project TIER Reproducibility Exercises",
     "section": "",
-    "text": "This website is being developed to host reproducibility exercises\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnimal House in Alcohol-Free Dorms?\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2018\n\n\n\n\n\n\n\n\n\n\n\n\nAnscombe’s Quartet: No Correlation Without Visualization!\n\n\n\n\n\n\n\n\n\n\n\nJan 24, 2020\n\n\n\n\n\n\nNo matching items"
+    "text": "This website is being developed to host reproducibility exercises\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnscombe’s Quartet: No Correlation Without Visualization!\n\n\n\n\n\n\n\n\n\n\n\nJan 24, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "anscombes-quartet/text-and-code-overview.html",
@@ -217,13 +217,13 @@
   {
     "objectID": "alcohol-exercise/intro.html",
     "href": "alcohol-exercise/intro.html",
-    "title": "Animal House in Alcohol-Free Dorms?",
+    "title": "Introduction",
     "section": "",
-    "text": "Introduction\nIn this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing.\nThe data you will use come from a survey of students at American colleges and universities conducted in 2001. The survey focused on alcohol use, but also included questions on many other aspects of college life.\nThis exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.\nA critical dimension of this exercise is documenting your work in such a way that everything you do with your data is transparent and reproducible. In this context, that means several things:\n\nWriting do-files containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.\n\nindicate where files that need to be opened are located and where files that need to be stored should be saved.\n\nConstructing a Data Appendix that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.\n\n\nWriting a Read Me file that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.\n\nWhen you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.",
+    "text": "Animal House in Alcohol-Free Dorms?\nIn this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing.\nThe data you will use come from a survey of students at American colleges and universities conducted in 2001. The survey focused on alcohol use, but also included questions on many other aspects of college life.\nThis exercise asks you to use the data from the alcohol survey to create a number of bar graphs, and then answer a series of questions about what the bar graphs suggest about patterns of alcohol use among students that live in alcohol-free housing compared to those who do not.\nA critical dimension of this exercise is documenting your work in such a way that everything you do with your data is transparent and reproducible. In this context, that means several things:\n\nWriting do-files containing code that executes every step of data processing and analysis you do to construct the bar graphs—including opening up the file containing the survey data, cleaning and processing the data as necessary, and then generating the bar graphs.\n\nindicate where files that need to be opened are located and where files that need to be stored should be saved.\n\nConstructing a Data Appendix that serves as a codebook or user’s guide to your analysis dataset—the cleaned and processed version of the survey data that you use to generate the bar graphs.\n\n\nWriting a Read Me file that describes the content and organization of the documentation you create for this exercise, and gives step-by-step instructions for using the documentation to replicate all the data processing you did and to reproduce your bar graphs.\n\nWhen you have completed this exercise, you will turn in both a printed report and a set of electronic files you create to document your work.",
     "crumbs": [
       "Alcohol Exercise",
       "Setup",
-      "Animal House in Alcohol-Free Dorms?"
+      "Introduction"
     ]
   },
   {

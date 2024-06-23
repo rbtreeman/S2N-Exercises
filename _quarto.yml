@@ -8,7 +8,9 @@ website:
   sidebar:
     style: "docked"
     search: true
+    collapse-level: 2
     contents:
+    
       
           ###########
           # ALCOHOL #
@@ -39,6 +41,7 @@ website:
           contents: 
             - alcohol-exercise/e-doc.qmd
 
+        - text: "---"
             ############
             # ANSCOMBE #
             ############

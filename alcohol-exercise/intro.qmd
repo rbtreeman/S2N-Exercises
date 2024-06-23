@@ -1,9 +1,9 @@
 ---
-title: "Animal House in Alcohol-Free Dorms?"
+title: "Introduction"
 toc: true
 date: 2018-12-04
 ---
-# Introduction
+# Animal House in Alcohol-Free Dorms?
 
 In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing. 
 
