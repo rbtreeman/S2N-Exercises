@@ -181,25 +181,25 @@
   {
     "objectID": "alcohol-exercise/dataset-and-codebook.html",
     "href": "alcohol-exercise/dataset-and-codebook.html",
-    "title": "Dataset and codebook",
+    "title": "Dataset and Codebook",
     "section": "",
     "text": "Download and examine the dataset and codebook you will use for this exercise\nFind and explore the website where the data for this exercise are stored. The data used in this exercise come from a study titled Harvard School of Public Health College Alcohol Study, 2001. This study is archived at the Inter-University Consortium for Political and Social Research (ICPSR); its ICPSR study number is 4291.\nGo to the ICPSR website (www.icpsr.umich.edu), and search for this study. When you have found the page for this study, read the information provided there",
     "crumbs": [
       "Alcohol Exercise",
       "Setup",
-      "Dataset and codebook"
+      "Dataset and Codebook"
     ]
   },
   {
     "objectID": "alcohol-exercise/dataset-and-codebook.html#general-comments-about-organizing-your-work-and-writing-do-files",
     "href": "alcohol-exercise/dataset-and-codebook.html#general-comments-about-organizing-your-work-and-writing-do-files",
-    "title": "Dataset and codebook",
+    "title": "Dataset and Codebook",
     "section": "General comments about organizing your work and writing do-files",
     "text": "General comments about organizing your work and writing do-files\n\nFolder structure and file locations.\nBefore you begin working on your do-files, make sure that you have created a folder hierarchy as described here, and that you have put the original data and the codebook in the folders specified here. As you work on this exercise, you will be creating new files of various kinds, and storing them in designated locations in this hierarchy.\nWhenever you are working with Stata, a copy of your complete folder hierarchy, with the most up-to-date versions of all your files stored in their designated locations, should be saved on the computer you are working on.",
     "crumbs": [
       "Alcohol Exercise",
       "Setup",
-      "Dataset and codebook"
+      "Dataset and Codebook"
     ]
   },
   {
