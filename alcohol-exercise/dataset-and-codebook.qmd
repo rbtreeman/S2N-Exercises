@@ -25,7 +25,7 @@ You should save copies of both of these files in the folder hierarchy you create
 
 Save the original data file in the `/Original-Data` folder.
 
-Save the codebook in the `/Metadata` folder (which is inside your Original-Data folder).
+Save the codebook in the `/Metadata` folder (which is inside your `/Original-Data` folder).
 
 ### Examine the codebook and dataset
 

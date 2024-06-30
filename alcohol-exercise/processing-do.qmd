@@ -45,7 +45,7 @@ In `processing.do`, you should write commands that accomplish the following:
   - equal to 4 if free=1 (the student lives in alcohol-free housing) and the student requested to live in alcohol-free housing
   - equal to missing (".") in all other cases
 
-- Generate a new variable that is simply an exact copy of G6, and give it the name `health`. 
+- Generate a new variable that is simply an exact copy of `G6`, and give it the name `health`. 
 
 ::: {.callout-tip collapse="true"}
 You will not use the variable `health` in this exercise, but in the addendum to this document it is used to illustrate the information that should be provided in the Data Appendix.
