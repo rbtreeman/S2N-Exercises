@@ -5,7 +5,7 @@ Download and examine the dataset and codebook you will use for this exercise
 
 Find and explore the website where the data for this exercise are stored.  The data used in this exercise come from a study titled Harvard School of Public Health College Alcohol Study, 2001.  This study is archived at the Inter-University Consortium for Political and Social Research (ICPSR); its ICPSR study number is 4291.   
 
-Go to the [ICPSR website](www.icpsr.umich.edu) (www.icpsr.umich.edu), and search for this study.
+Go to the [ICPSR website](https://www.icpsr.umich.edu) (www.icpsr.umich.edu), and search for this study.
 When you have found the page for this study, read the information provided there
 
 ::: {.callout-tip collapse="true"}
