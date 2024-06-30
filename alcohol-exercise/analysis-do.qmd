@@ -4,7 +4,7 @@ title: "analysis.do"
 
 The `analysis.do` do-file generates the bar graphs that constitute the main analysis you do for this assignment, using the data in your final `analysis.dta` file. Write commands in `analysis.do` that accomplish the following:
 
--   Open the data file analysis.dta (which, after you have written and run `processing.do`, should be saved in your Analysis-Data folder).
+-   Open the data file `analysis.dta` (which, after you have written and run `processing.do`, should be saved in your `/Analysis-Data` folder).
 
 -   Generate a bar graph, with two bars, where:
 
@@ -12,18 +12,18 @@ The `analysis.do` do-file generates the bar graphs that constitute the main anal
     -   one bar represents students who do not live in alcohol-free housing
     -   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days
 
-Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure1.gph`. (Use a relative directory path to specify the location of the For-Report sub-folder.)
+Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure1.gph`. (Use a relative directory path to specify the location of the For-Report sub-folder.)
 
 -   Generate a bar graph, with two bars, where:
     -   one bar represents students who live in alcohol-free housing because they requested it
     -   one bar represents students who live alcohol free housing because they were assigned to it the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days
 
-Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure2.gph`.
+Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure2.gph`.
 
 -   Generate a bar graph, with four bars, where:
     -   each bar represents students in one of the four categories defined by the variable housing
     -   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days
-    -   Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure3.gph`.
+    -   Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure3.gph`.
 -   Generate two side-by-side bar graphs, each consisting of two bars, where:
     -   one of the bar graphs represents only students who had five or more drinks in a row on three or more occasions during their last year of high school
     -   one of the bar graphs represents only students who had five or more drinks in a row on fewer than three occasions during their last year of high school
@@ -34,7 +34,7 @@ Save this graph in the For-Report subfolder of the Graphs folder, with the name 
 -   one bar represents students who do not live in alcohol-free housing
 -   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days
 
-Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure4.gph`.
+Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure4.gph`.
 
 -   Generate two side-by side bar graphs, each consisting of two bars, where:
     -   one of the bar graphs represents only students who had five or more drinks in a row on
@@ -44,7 +44,7 @@ Save this graph in the For-Report subfolder of the Graphs folder, with the name 
 
 -   one bar represents students who live in alcohol-free housing because they requested it
 -   one bar represents students who live alcohol free housing because they were assigned to it
--   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure5.gph`.
+-   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure5.gph`.
 
 ```{=html}
 <!-- -->
@@ -58,13 +58,13 @@ Save this graph in the For-Report subfolder of the Graphs folder, with the name 
 -   each bar represents students in one of the four categories defined by the variable housing
 -   the height of each bar is equal to the proportion of students (in the group the bar represents) who drank enough to get drunk three or more times in the last thirty days
 
-Save this graph in the For-Report subfolder of the Graphs folder, with the name `Figure6.gph`.
+Save this graph in the `/For-Report` subfolder of the `/Graphs` folder, with the name `Figure6.gph`.
 
 ::: {.callout-note appearance="simple"}
 Write comments indicating which commands produce which graphs: For example, before the command that generates Figure 4, write a comment like “The following command generates Figure 4.”
 :::
 
-Remember to save `analysis.do` in your Command-Files folder.
+Remember to save `analysis.do` in your `/Command-Files` folder.
 
 ### Cleaning up your do-files
 
