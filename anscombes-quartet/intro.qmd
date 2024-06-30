@@ -1,5 +1,5 @@
 ---
-title: "Anscombe's Quartet: No Correlation Without Visualization!"
+title: "Anscombe’s Quartet: No Correlation Without Visualization!"
 date: 2020-01-24
 toc: true
 ---

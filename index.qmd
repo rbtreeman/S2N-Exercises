@@ -4,9 +4,9 @@ title-block-banner: true
 #placeholder.png
 date-modified: 06-22-2024
 listing:
-  contents:
+    contents:
     # pulls the intro.qmd file from any projects
-    - "intro.qmd"
-  type: default
+      - "intro.qmd"
+    type: default
 ---
 This website is being developed to host reproducibility exercises
