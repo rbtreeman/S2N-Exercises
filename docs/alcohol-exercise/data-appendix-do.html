@@ -350,17 +350,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The <code>data-appendix.do</code> do-file will contain commands that generate information that will appear in the Data Appendix (see section VII below). In particular, <code>data-appendix.do</code> should contain commands that accomplish the following:</p>
+<p>The <code>data-appendix.do</code> do-file will contain commands that generate information that will appear in the <a href="https://connor1883.github.io/quarto-demo/alcohol-exercise/report-appendix.html">Data Appendix</a>. In particular, <code>data-appendix.do</code> should contain commands that accomplish the following:</p>
 <ul>
-<li><p>Open the data file analysis.dta (which, after you have written and run processing.do, should be saved in your Analysis-Data folder).</p></li>
-<li><p>Generate the following output for each of the five variables (excluding health) in the <code>analysis.dta</code> data file:</p></li>
+<li><p>Open the data file <code>analysis.dta</code> (which, after you have written and run <code>processing.do</code>, should be saved in your <code>/Analysis-Data</code> folder).</p></li>
+<li><p>Generate the following output for each of the five variables (excluding <code>health</code>) in the <code>analysis.dta</code> data file:</p></li>
 <li><p>The number of missing observations and the total (missing plus non-missing) number of observations.</p></li>
 <li><p>The frequency distribution and the percent frequency distribution.</p></li>
 <li><p>A bar graph showing the percent frequency distribution.</p></li>
-<li><p>When each bar graph is created, a copy should be saved (as a <code>Stata.gph</code> graphics file) in the For-Data-Appendix subfolder of the Graphs folder.</p></li>
+<li><p>When each bar graph is created, a copy should be saved (as a <code>Stata.gph</code> graphics file) in the <code>/For-Data-Appendix</code> subfolder of the <code>/Graphs</code> folder.</p></li>
 </ul>
 <blockquote class="blockquote">
-<p>(In the commands that save these graph files, use relative directory paths to specify the location of the For-Data-Appendix sub-folder.) Save each graph with the name <code>`var’-dist.gph</code>, where <code>`var’</code> is replaced by the name of the variable.</p>
+<p>(In the commands that save these graph files, use relative directory paths to specify the location of the <code>/For-Data-Appendix</code> sub-folder.) Save each graph with the name <code>`var’-dist.gph</code>, where <code>`var’</code> is replaced by the name of the variable.</p>
 </blockquote>
 <ul>
 <li>Write comments explaining which commands produce which information and graphs: Each command that produces information or a graph that will be included in your Data Appendix should be preceded by a comment that describes the output the command will produce.</li>

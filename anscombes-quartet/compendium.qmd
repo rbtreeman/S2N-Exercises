@@ -7,7 +7,7 @@ Assembling your compendium for this exercise is just a matter of cleaning up and
 
 - Delete any vestiges of code or text you wrote that didn't pan out or that is not needed to produce your report, so that you have streamlined source file that produces the output required for the report in a clear and direct way.  Any code or text that you experimented with but that does not serve a purpose in generating the report should be removed.
 
-- Be sure that you have inserted comments generously throughout YourNameReport.Rmd to explain what the code you have written is doing at every step of the exercise.
+- Be sure that you have inserted comments generously throughout `YourNameReport.Rmd` to explain what the code you have written is doing at every step of the exercise.
 
 **Second,** be sure that your `./YourNameAnscombeExercise` folder contains the following items:
 
@@ -18,7 +18,7 @@ Assembling your compendium for this exercise is just a matter of cleaning up and
   -	`YourNameReport.html`.  This is the report in .html format.
   -	`YourNameReport.pdf`.  This is the report in .pdf format.
 -	One subfolder:
-    -	The subfolder should be called `/Data`, and it should contain a file called `anscombe.csv`.  The Data folder is created, and `anscombe.csv` is downloaded and saved in it, by the R script `Setup.R`.  (`Setup.R` runs when you knit `YourNameReport.Rmd`: there is an R chunk in the source file that calls `Setup.R`.)
+    -	The subfolder should be called `/Data`, and it should contain a file called `anscombe.csv`.  The Data folder is created, and `anscombe.csv` is downloaded and saved in it, by the R script `Setup.R`(`Setup.R` runs when you knit `YourNameReport.Rmd`: there is an R chunk in the source file that calls `Setup.R`.)
 
 If there are any files in `./YourNameAnscombeExercise` other than those listed above, you should delete them.  In particular:
   
