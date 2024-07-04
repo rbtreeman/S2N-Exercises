@@ -3,15 +3,14 @@ title: "Anscombe’s Quartet: No Correlation Without Visualization!"
 date: 2020-01-24
 toc: true
 ---
+
 # General description of the exercise
 
-This exercise teaches some cautionary lessons about using correlation and regression to
-characterize the nature of the association between two variables.
+This exercise teaches some cautionary lessons about using correlation and regression to characterize the nature of the association between two variables.
 
-The dataset used for this exercise is shown in the table below. It contains eight variables,
-with eleven observations each.
+The dataset used for this exercise is shown in the table below. It contains eight variables, with eleven observations each.
 
-```
+```         
 
       X1      Y1   X2     Y2   X3      Y3   X4     Y4  
 _____________________________________________________
@@ -30,10 +29,8 @@ _____________________________________________________
 
 The eight variables in the dataset will be treated as four pairs: (X1, Y1), (X2, Y2), (X3, Y3), (X4, Y4).
 
-There are eleven observations for each variable.  We will treat the values of the variables as quantitative (as opposed to categorical) data.  But in fact, the values of these variables do not represent meaningful measurements of any kind.  They were made up by a statistician named F. J. Anscombe, specifically for the purpose of illustrating the issues that you will explore in this exercise.  The four pairs of variables in this dataset have come to be called "Anscombe's Quartet."
+There are eleven observations for each variable. We will treat the values of the variables as quantitative (as opposed to categorical) data. But in fact, the values of these variables do not represent meaningful measurements of any kind. They were made up by a statistician named F. J. Anscombe, specifically for the purpose of illustrating the issues that you will explore in this exercise. The four pairs of variables in this dataset have come to be called "Anscombe's Quartet."
 
-For this exercise, you will generate some univariate descriptive statistics to compare the distributions of the four X variables and the four Y variables, and calculate simple correlations and regressions to compare the associations between the X and Y variables in the four pairs.  In the end you will produce a report in which you present your results and answer some questions that ask you to interpret them.
-Y
-ou will produce the report by writing an R Markdown file that contains R code chunks that execute the analyses you need to do, as well as Markdown code that generates the text of your report.
+For this exercise, you will generate some univariate descriptive statistics to compare the distributions of the four X variables and the four Y variables, and calculate simple correlations and regressions to compare the associations between the X and Y variables in the four pairs. In the end you will produce a report in which you present your results and answer some questions that ask you to interpret them. Y ou will produce the report by writing an R Markdown file that contains R code chunks that execute the analyses you need to do, as well as Markdown code that generates the text of your report.
 
-You will also construct an electronic "compendium" for this exercise, a folder in which you store the data, the R Markdown file you write, and some additional files that will be explained later in these instructions.  The purpose of the compendium is to provide comprehensive documentation of your work that would make it easy for someone else to understand everything you did with the data, and to reproduce both the text and the computational results presented in your report.
+You will also construct an electronic "compendium" for this exercise, a folder in which you store the data, the R Markdown file you write, and some additional files that will be explained later in these instructions. The purpose of the compendium is to provide comprehensive documentation of your work that would make it easy for someone else to understand everything you did with the data, and to reproduce both the text and the computational results presented in your report.

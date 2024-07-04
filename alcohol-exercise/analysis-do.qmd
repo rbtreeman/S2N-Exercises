@@ -1,5 +1,5 @@
 ---
-title: "analysis.do"
+title: "7. analysis.do"
 ---
 
 The `analysis.do` do-file generates the bar graphs that constitute the main analysis you do for this assignment, using the data in your final `analysis.dta` file. Write commands in `analysis.do` that accomplish the following:

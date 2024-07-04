@@ -1,5 +1,5 @@
 ---
-title: "Checking your work"
+title: "12. Checking your work"
 ---
 
 When you have completed the exercise, you should be sure that clean, final versions of all the electronic documents you created are stored in the appropriate locations in the folder hierarchy you created for this exercise. 

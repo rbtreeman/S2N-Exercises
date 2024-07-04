@@ -1,5 +1,5 @@
 ---
-title: "data-appendix.do"
+title: "6. data-appendix.do"
 ---
 
 The `data-appendix.do` do-file will contain commands that generate information that will appear in the [Data Appendix](https://connor1883.github.io/quarto-demo/alcohol-exercise/report-appendix.html).  In particular, `data-appendix.do` should contain commands that accomplish the following:

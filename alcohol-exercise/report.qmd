@@ -1,5 +1,5 @@
 ---
-title: "Writing the report"
+title: "9. Writing the report"
 ---
 
 The printed report you turn in for this exercise will consist of three parts: answers to a series of questions that ask you to interpret the bar graphs you created, the Data Appendix, and printed copies of the graphs.

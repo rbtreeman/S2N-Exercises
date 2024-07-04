@@ -1,5 +1,5 @@
 ---
-title: "Dataset and Codebook" 
+title: "3. Dataset and Codebook" 
 ---
 Download and examine the dataset and codebook you will use for this exercise
 

@@ -1,5 +1,5 @@
 ---
-title: "Setting up the workspace"
+title: "2. Setting up the workspace"
 ---
 ## Create a set of folders to store your work in
 

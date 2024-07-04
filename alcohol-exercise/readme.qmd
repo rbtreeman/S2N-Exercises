@@ -1,5 +1,5 @@
 ---
-title: "Writing the README"
+title: "8. Writing the README"
 ---
 
 The Read Me file is a document that provides information about the electronic files you have assembled to document your work for this exercise.  
