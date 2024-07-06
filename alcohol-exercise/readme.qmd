@@ -20,5 +20,5 @@ The title "Read Me File for XXX" (where you substitute an informative title for 
 
 The name(s) of the authors(s) of the exercise and the date it was turned in should also be shown at the top of the Read Me file.   The pages of the Read Me file should be numbered.
 
-When the Read Me file is complete, you should save a copy of it in pdf format.  Give the file the name read-me.pdf.
-A copy of read-me.pdf should be stored in the top level of your main project folder `./Your-Name-Alcohol-Exercise`.  
+When the Read Me file is complete, you should save a copy of it in pdf format.  Give the file the name `read-me.pdf`.
+A copy of `read-me.pdf` should be stored in the top level of your main project folder `./Your-Name-Alcohol-Exercise`.  
