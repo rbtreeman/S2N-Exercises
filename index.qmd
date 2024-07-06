@@ -1,6 +1,6 @@
 ---
 title: "Project TIER Reproducibility Exercises"
-title-block-banner: true
+title-block-banner: false
 #placeholder.png
 date-modified: 07-06-2024
 listing:

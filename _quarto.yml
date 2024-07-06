@@ -5,7 +5,7 @@ project:
 website:
   page-navigation: true
   navbar:
-    background: primary
+    background: darkred
     search: true
     left:
       - text: "Home"
