@@ -5,7 +5,7 @@ date: 2018-12-04
 ---
 # Introduction
 
-In this exercise, you will investigate whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing. 
+In this exercise, you will explore whether there is less drinking among college students who live in alcohol-free housing than among students who do not live in alcohol-free housing. 
 
 The data you will use come from a survey of students at American colleges and universities conducted in 2001.  The survey focused on alcohol use, but also included questions on many other aspects of college life.
 
